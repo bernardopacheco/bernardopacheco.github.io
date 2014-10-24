@@ -37,11 +37,20 @@ module.exports = function( grunt ) {
           compress: true
         }
       }
+    },
+
+    delta: {
+      less: {
+        files: [ 'src/css/**/*.less' ],
+        tasks: [ 'less:build' ]
+      }
     }
   };
 
   grunt.initConfig( config );
 
+  grunt.renameTask( 'watch', 'delta' );
+  grunt.registerTask( 'watch', [ 'build', 'delta' ] );
   grunt.registerTask( 'build', [ 'clean', 'less:build' ] );
   grunt.registerTask( 'dist', [ 'less:dist' ] );
   grunt.registerTask( 'default', [ 'build', 'dist' ] );

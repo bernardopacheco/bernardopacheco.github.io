@@ -1,0 +1,46 @@
+/* Extra small devices (phones) */
+
+#site-header {
+
+  background: #f5f6f5;
+  height: 100%;
+  position: static;
+  text-align: center;
+  width: 100%;
+
+  #avatar {
+
+    color: white;
+    text-decoration: none;
+
+    .image {
+
+      background-image: url("//avatars1.githubusercontent.com/u/5872815?v=2&s=460");
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 200px;
+      padding-top: 140px;
+
+      h2 {
+        margin: 0;
+      }
+    }
+  }
+
+  #site-header-content {
+    padding: 20px 10px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media ( min-width: @screen-md-min ) {
+
+  #site-header {
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 320px;
+  }
+}
