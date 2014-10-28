@@ -2,6 +2,7 @@ module.exports = function( grunt ) {
   'use strict';
 
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
@@ -22,6 +23,15 @@ module.exports = function( grunt ) {
     },
 
     clean: [ 'assets' ],
+
+    copy: {
+      font: {
+        src: 'fonts/*',
+        dest: 'assets',
+        expand: true,
+        cwd: 'bower_components/font-awesome'
+      }
+    },
 
     less: {
       build: {
@@ -51,7 +61,7 @@ module.exports = function( grunt ) {
 
   grunt.renameTask( 'watch', 'delta' );
   grunt.registerTask( 'watch', [ 'build', 'delta' ] );
-  grunt.registerTask( 'build', [ 'clean', 'less:build' ] );
+  grunt.registerTask( 'build', [ 'clean', 'copy:font', 'less:build' ] );
   grunt.registerTask( 'dist', [ 'less:dist' ] );
   grunt.registerTask( 'default', [ 'build', 'dist' ] );
 };
