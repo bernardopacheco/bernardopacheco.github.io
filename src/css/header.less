@@ -2,34 +2,68 @@
 
 #site-header {
 
-  background: #f5f6f5;
+  background-color: @white;
+  border-right: 1px solid @hint-text;
   height: 100%;
   position: static;
-  text-align: center;
   width: 100%;
 
-  #avatar {
+  #avatar-container {
 
-    color: white;
-    text-decoration: none;
+    background-color: @text-color;
+    height: 200px;
+    padding: 24px;
 
-    .image {
+    img {
 
-      background-image: url("//avatars1.githubusercontent.com/u/5872815?v=2&s=460");
-      background-position: 50% 50%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 200px;
-      padding-top: 140px;
+      width: 100px;
+      border-radius: 50px;
+    }
 
-      h2 {
-        margin: 0;
-      }
+    p {
+      color: lighten( @black, 87% ); // Text
+      font-size: 1.857em; // 26px / 14px = 1.857em
+      margin-top: 20px;
     }
   }
 
-  #site-header-content {
-    padding: 20px 10px;
+  #content {
+
+    padding: 24px 0;
+    text-align: left;
+
+    nav {
+
+      li {
+
+        line-height: 40px;
+        padding-left: 24px;
+        height: 40px;
+
+        a {
+
+          color: @text-color;
+          display: inline-block;
+          font-size: 0.9285em; // 13px / 14px = 0.9285em
+          font-weight: bold;
+          text-decoration: none;
+          width: 100%;
+
+          i {
+            font-size: 1.571em; // 22px / 14px = 1.571em
+            vertical-align: middle;
+          }
+
+          span {
+            margin-left: 24px;
+          }
+        }
+
+        &:hover {
+         background-color: @dividers;
+        }
+      }
+    }
   }
 }
 
