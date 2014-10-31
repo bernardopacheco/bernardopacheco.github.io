@@ -7859,29 +7859,34 @@ body {
   width: 100%;
 }
 #site-header #avatar-container {
-  background-color: #212121;
-  height: 200px;
-  padding: 24px;
+  background-color: #3f51b5;
+  height: 215px;
+  padding: 22px;
 }
 #site-header #avatar-container img {
   width: 100px;
   border-radius: 50px;
 }
-#site-header #avatar-container p {
-  color: #dedede;
+#site-header #avatar-container #name {
+  color: #ffffff;
   font-size: 1.857em;
-  margin-top: 20px;
+  font-weight: 300;
+  margin-top: 10px;
 }
-#site-header #content {
+#site-header #avatar-container #intro {
+  color: #ffffff;
+  font-size: 0.857em;
+}
+#site-header #nav-container {
   padding: 24px 0;
   text-align: left;
 }
-#site-header #content nav li {
+#site-header #nav-container nav li {
   line-height: 40px;
-  padding-left: 24px;
+  padding-left: 22px;
   height: 40px;
 }
-#site-header #content nav li a {
+#site-header #nav-container nav li a {
   color: #212121;
   display: inline-block;
   font-size: 0.9285em;
@@ -7889,15 +7894,33 @@ body {
   text-decoration: none;
   width: 100%;
 }
-#site-header #content nav li a i {
+#site-header #nav-container nav li a i {
   font-size: 1.571em;
   vertical-align: middle;
 }
-#site-header #content nav li a span {
+#site-header #nav-container nav li a span {
   margin-left: 24px;
 }
-#site-header #content nav li:hover {
+#site-header #nav-container nav li:hover {
   background-color: #e0e0e0;
+}
+#site-header footer {
+  bottom: 0;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.9285em;
+  padding: 22px 22px 22px 28px;
+  position: absolute;
+  width: 100%;
+}
+#site-header footer a {
+  color: #212121;
+  text-decoration: none;
+}
+#site-header footer .fa {
+  font-size: 1.142em;
+}
+#site-header footer .fa-heart {
+  color: #e51c23;
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {

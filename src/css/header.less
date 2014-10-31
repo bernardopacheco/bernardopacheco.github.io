@@ -10,9 +10,9 @@
 
   #avatar-container {
 
-    background-color: @text-color;
-    height: 200px;
-    padding: 24px;
+    background-color: @blue;
+    height: 215px;
+    padding: 22px;
 
     img {
 
@@ -20,14 +20,22 @@
       border-radius: 50px;
     }
 
-    p {
-      color: lighten( @black, 87% ); // Text
+    #name {
+
+      color: @white;
       font-size: 1.857em; // 26px / 14px = 1.857em
-      margin-top: 20px;
+      font-weight: 300;
+      margin-top: 10px;
+    }
+
+    #intro {
+
+      color: @white;
+      font-size: 0.857em; // 12px / 14px = 0.857em
     }
   }
 
-  #content {
+  #nav-container {
 
     padding: 24px 0;
     text-align: left;
@@ -37,7 +45,7 @@
       li {
 
         line-height: 40px;
-        padding-left: 24px;
+        padding-left: 22px;
         height: 40px;
 
         a {
@@ -65,12 +73,36 @@
       }
     }
   }
+
+  footer {
+
+    bottom: 0;
+    border-top: 1px solid @dividers;
+    font-size: 0.9285em; // 13px / 14px = 0.9285em
+    padding: 22px 22px 22px 28px;
+    position: absolute;
+    width: 100%;
+
+    a {
+      color: @text-color;
+      text-decoration: none;
+    }
+
+    .fa {
+      font-size: 1.142em; // 16px / 14px = 1.142em
+    }
+
+    .fa-heart {
+      color: @red;
+    }
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media ( min-width: @screen-md-min ) {
 
   #site-header {
+
     bottom: 0px;
     left: 0px;
     position: fixed;
