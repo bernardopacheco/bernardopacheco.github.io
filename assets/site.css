@@ -7862,6 +7862,7 @@ body {
   background-color: #3f51b5;
   height: 215px;
   padding: 22px;
+  text-align: center;
 }
 #site-header #avatar-container img {
   width: 100px;
@@ -7873,54 +7874,13 @@ body {
   font-weight: 300;
   margin-top: 10px;
 }
-#site-header #avatar-container #intro {
-  color: #ffffff;
+#site-header #avatar-container nav {
   font-size: 0.857em;
 }
-#site-header #nav-container {
-  padding: 24px 0;
-  text-align: left;
-}
-#site-header #nav-container nav li {
-  line-height: 40px;
-  padding-left: 22px;
-  height: 40px;
-}
-#site-header #nav-container nav li a {
-  color: #212121;
-  display: inline-block;
-  font-size: 0.9285em;
+#site-header #avatar-container nav a {
+  color: #ffffff;
   font-weight: bold;
   text-decoration: none;
-  width: 100%;
-}
-#site-header #nav-container nav li a i {
-  font-size: 1.571em;
-  vertical-align: middle;
-}
-#site-header #nav-container nav li a span {
-  margin-left: 24px;
-}
-#site-header #nav-container nav li:hover {
-  background-color: #e0e0e0;
-}
-#site-header footer {
-  bottom: 0;
-  border-top: 1px solid #e0e0e0;
-  font-size: 0.9285em;
-  padding: 22px 22px 22px 28px;
-  position: absolute;
-  width: 100%;
-}
-#site-header footer a {
-  color: #212121;
-  text-decoration: none;
-}
-#site-header footer .fa {
-  font-size: 1.142em;
-}
-#site-header footer .fa-heart {
-  color: #e51c23;
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -7930,5 +7890,57 @@ body {
     position: fixed;
     top: 0px;
     width: 320px;
+  }
+  #site-header #avatar-container {
+    text-align: left;
+  }
+  #site-header #avatar-container #intro {
+    color: #ffffff;
+    font-size: 0.857em;
+  }
+  #site-header #nav-container {
+    padding: 24px 0;
+    text-align: left;
+  }
+  #site-header #nav-container nav li {
+    line-height: 40px;
+    padding-left: 22px;
+    height: 40px;
+  }
+  #site-header #nav-container nav li a {
+    color: #212121;
+    display: inline-block;
+    font-size: 0.9285em;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+  }
+  #site-header #nav-container nav li a i {
+    font-size: 1.571em;
+    vertical-align: middle;
+  }
+  #site-header #nav-container nav li a span {
+    margin-left: 24px;
+  }
+  #site-header #nav-container nav li:hover {
+    background-color: #e0e0e0;
+  }
+  #site-header footer {
+    bottom: 0;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.9285em;
+    padding: 22px 22px 22px 28px;
+    position: absolute;
+    width: 100%;
+  }
+  #site-header footer a {
+    color: #212121;
+    text-decoration: none;
+  }
+  #site-header footer .fa {
+    font-size: 1.142em;
+  }
+  #site-header footer .fa-heart {
+    color: #e51c23;
   }
 }

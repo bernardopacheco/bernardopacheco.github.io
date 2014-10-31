@@ -13,6 +13,7 @@
     background-color: @blue;
     height: 215px;
     padding: 22px;
+    text-align: center;
 
     img {
 
@@ -28,72 +29,16 @@
       margin-top: 10px;
     }
 
-    #intro {
-
-      color: @white;
-      font-size: 0.857em; // 12px / 14px = 0.857em
-    }
-  }
-
-  #nav-container {
-
-    padding: 24px 0;
-    text-align: left;
-
     nav {
 
-      li {
+      font-size: 0.857em; // 12px / 14px = 0.857em
 
-        line-height: 40px;
-        padding-left: 22px;
-        height: 40px;
+      a {
 
-        a {
-
-          color: @text-color;
-          display: inline-block;
-          font-size: 0.9285em; // 13px / 14px = 0.9285em
-          font-weight: bold;
-          text-decoration: none;
-          width: 100%;
-
-          i {
-            font-size: 1.571em; // 22px / 14px = 1.571em
-            vertical-align: middle;
-          }
-
-          span {
-            margin-left: 24px;
-          }
-        }
-
-        &:hover {
-         background-color: @dividers;
-        }
+        color: @white;
+        font-weight: bold;
+        text-decoration: none;
       }
-    }
-  }
-
-  footer {
-
-    bottom: 0;
-    border-top: 1px solid @dividers;
-    font-size: 0.9285em; // 13px / 14px = 0.9285em
-    padding: 22px 22px 22px 28px;
-    position: absolute;
-    width: 100%;
-
-    a {
-      color: @text-color;
-      text-decoration: none;
-    }
-
-    .fa {
-      font-size: 1.142em; // 16px / 14px = 1.142em
-    }
-
-    .fa-heart {
-      color: @red;
     }
   }
 }
@@ -108,5 +53,78 @@
     position: fixed;
     top: 0px;
     width: 320px;
+
+    #avatar-container {
+
+      text-align: left;
+
+      #intro {
+
+        color: @white;
+        font-size: 0.857em; // 12px / 14px = 0.857em
+      }
+    }
+
+    #nav-container {
+
+      padding: 24px 0;
+      text-align: left;
+
+      nav {
+
+        li {
+
+          line-height: 40px;
+          padding-left: 22px;
+          height: 40px;
+
+          a {
+
+            color: @text-color;
+            display: inline-block;
+            font-size: 0.9285em; // 13px / 14px = 0.9285em
+            font-weight: bold;
+            text-decoration: none;
+            width: 100%;
+
+            i {
+              font-size: 1.571em; // 22px / 14px = 1.571em
+              vertical-align: middle;
+            }
+
+            span {
+              margin-left: 24px;
+            }
+          }
+
+          &:hover {
+            background-color: @dividers;
+          }
+        }
+      }
+    }
+
+    footer {
+
+      bottom: 0;
+      border-top: 1px solid @dividers;
+      font-size: 0.9285em; // 13px / 14px = 0.9285em
+      padding: 22px 22px 22px 28px;
+      position: absolute;
+      width: 100%;
+
+      a {
+        color: @text-color;
+        text-decoration: none;
+      }
+
+      .fa {
+        font-size: 1.142em; // 16px / 14px = 1.142em
+      }
+
+      .fa-heart {
+        color: @red;
+      }
+    }
   }
 }
