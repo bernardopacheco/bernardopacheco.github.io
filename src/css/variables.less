@@ -17,3 +17,18 @@
 @secondary-text: darken( @white, 54% ); // Secondary Text / Icons
 @hint-text: darken( @white, 26% ); // Hint Text
 @dividers: darken( @white, 12% ); // Dividers
+
+// Menu size
+@header-size: 320px;
+
+// Container size
+
+// Medium screen / desktop
+@container-desktop: ( 940px - @header-size + @grid-gutter-width );
+//** For `@screen-md-min` and up.
+@container-md: @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop: ( 1140px - @header-size + @grid-gutter-width );
+//** For `@screen-lg-min` and up.
+@container-lg: @container-large-desktop;
