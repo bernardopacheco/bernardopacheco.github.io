@@ -14,15 +14,16 @@ layout: default
       <article class="post">
 
         <div class="row">
-          <div class="col-md-1 post-date">
+          <div class="col-md-2 post-date">
 
             <h2 class="post-day">{{ post.date | date: "%d" }}</h2>
-            <div class="post-month-year">{{ post.date | date: "%b %Y" }}</div>
+            <div class="post-month-year">{{ post.date | date: "%b" }}</div>
+            <div class="post-month-year">{{ post.date | date: "%Y" }}</div>
             <!--date-->
 
           </div>
 
-          <div class="col-md-11">
+          <div class="col-md-10">
 
             <h2 class="post-title text-uppercase">
               <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
