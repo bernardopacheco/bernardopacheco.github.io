@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div id="posts">
+<section id="posts">
 
   <h1>Posts</h1>
 
@@ -10,31 +10,57 @@ layout: default
 
   <div class="row">
     <div class="col-sm-12">
-      <div class="post-container">
+
+      <article class="post">
 
         <div class="row">
-          <div class="col-md-1">
-            <h3 class="post-date">
-              <span>{{ post.date | date: "%d" }}</span>
-              <span>{{ post.date | date: "%b %Y" }}</span>
-            </h3>
+          <div class="col-md-1 post-date">
+
+            <h2 class="post-day">{{ post.date | date: "%d" }}</h2>
+            <div class="post-month-year">{{ post.date | date: "%b %Y" }}</div>
+            <!--date-->
+
           </div>
 
           <div class="col-md-11">
-            <h2 class="post-title">
+
+            <h2 class="post-title text-uppercase">
               <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
+            <!--title-->
 
-            {{ post.excerpt }}
+            <div class="post-body">
+              {{ post.excerpt }}
+            </div>
+            <!--body-->
 
-            <a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+            <div class="post-share">
+
+              <span class="share-title">Share on:</span>
+
+              <ul class="share-social-medias list-inline">
+                <li>Twitter</li>
+                <li>Facebook</li>
+                <li>Google</li>
+                <li>LinkedIn</li>
+              </ul>
+
+            </div>
+
+            <div class="post-reading-link">
+              <a href="{{ post.url | prepend: site.baseurl }}">Continue reading&nbsp;<i class="fa fa-angle-double-right"></i></a>
+            </div>
+            <!-- reading link -->
+
           </div>
         </div>
 
-      </div>
+      </article>
+      <!--post-->
+
     </div>
   </div>
 
   {% endfor %}
 
-</div>
+</section>

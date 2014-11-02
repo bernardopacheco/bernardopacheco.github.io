@@ -2,7 +2,7 @@
 
 #posts {
 
-  .post-container {
+  .post {
 
     background-color: @white;
     border: 1px solid @hint-text;
@@ -11,12 +11,99 @@
     margin-bottom: 14px;
 
     .post-date {
-      margin-top: 0;
+
+      padding-right: 0;
+
+      .post-day {
+
+        color: @hint-text;
+        display: inline-block;
+        font-weight: bold;
+        letter-spacing: -1px;
+        margin-top: 0;
+      }
+
+      .post-month-year {
+
+        color: @text-color;
+        display: inline-block;
+        font-weight: bold;
+        letter-spacing: -1px;
+      }
     }
 
     .post-title {
+
       margin-top: 0;
+      font-weight: bold;
+      letter-spacing: -1px;
+
+      a {
+
+        color: @text-color;
+        text-decoration: none;
+      }
+    }
+
+    .post-body {
+      color: @text-color;
+    }
+
+    .post-share {
+
+      margin-top: 25px;
+
+      .share-title {
+
+        border-top: 1px solid @secondary-text;
+        color: @secondary-text;
+        font-size: 0.9285em; // 13px / 14px = 0.9285em
+        font-weight: bold;
+        padding-top: 10px;
+      }
+
+      .share-social-medias {
+        margin-top: 10px;
+      }
+    }
+
+    .post-reading-link {
+
+      font-size: 1.142em; // 16px / 14px = 1.142em
+      margin-top: 20px;
+
+      a {
+        color: @red;
+        text-decoration: none;
+
+      }
     }
   }
 }
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media ( min-width: @screen-md-min ) {
+
+  #posts {
+
+    .post {
+
+      .post-date {
+
+        text-align: center;
+
+        .post-day {
+          display: block;
+        }
+
+        .post-month-year {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
 
