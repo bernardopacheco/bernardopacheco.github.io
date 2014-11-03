@@ -24,14 +24,14 @@
     #name {
 
       color: @white;
-      font-size: 2em; // 26px / 13px = 2em
+      font-size: ( 26px / @font-size-base ) * 1em;
       font-weight: 300;
       margin-top: 10px;
     }
 
     nav {
 
-      font-size: 0.923em; // 12px / 13px = 0.923em
+      font-size: ( 12px / @font-size-base ) * 1em;
 
       a {
 
@@ -61,7 +61,7 @@
       #intro {
 
         color: @white;
-        font-size: 0.923em; // 12px / 13px = 0.923em
+        font-size: ( 12px / @font-size-base ) * 1em;
       }
     }
 
@@ -87,7 +87,7 @@
             width: 100%;
 
             i {
-              font-size: 1.692em; // 22px / 13px = 1.692em
+              font-size: ( 22px / @font-size-base ) * 1em;
               vertical-align: middle;
             }
 
@@ -117,7 +117,7 @@
       }
 
       .fa {
-        font-size: 1.079em; // 14px / 13px = 1.079em
+        font-size: ( 14px / @font-size-base ) * 1em;
       }
 
       .fa-heart {

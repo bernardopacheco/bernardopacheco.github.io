@@ -28,7 +28,7 @@
         color: @text-color;
         display: inline-block;
         font-weight: 600;
-        font-size: 1.230em; // 16px / 13px = 1.230em
+        font-size: ( 16px / @font-size-base ) * 1em;
       }
     }
 
@@ -68,7 +68,7 @@
 
     .post-reading-link {
 
-      font-size: 1.076em; // 14px / 13px = 1.076em
+      font-size: ( 14px / @font-size-base ) * 1em;
       margin-top: 20px;
 
       a {

@@ -881,7 +881,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 13px;
   line-height: 1.42857143;
   color: #212121;
@@ -7843,6 +7843,9 @@ button.close {
 ::-moz-selection {
   background: #f9bdbb;
 }
+p {
+  line-height: 1.84615385em;
+}
 /* Extra small devices (phones) */
 body {
   background-color: #e0e0e0;
@@ -7875,7 +7878,7 @@ body {
   color: #212121;
   display: inline-block;
   font-weight: 600;
-  font-size: 1.230em;
+  font-size: 1.23076923em;
 }
 #posts .post .post-title {
   margin-top: 0;
@@ -7902,7 +7905,7 @@ body {
   margin-top: 10px;
 }
 #posts .post .post-reading-link {
-  font-size: 1.076em;
+  font-size: 1.07692308em;
   margin-top: 20px;
 }
 #posts .post .post-reading-link a {
@@ -7945,7 +7948,7 @@ body {
   margin-top: 10px;
 }
 #site-header #avatar-container nav {
-  font-size: 0.923em;
+  font-size: 0.92307692em;
 }
 #site-header #avatar-container nav a {
   color: #ffffff;
@@ -7965,7 +7968,7 @@ body {
   }
   #site-header #avatar-container #intro {
     color: #ffffff;
-    font-size: 0.923em;
+    font-size: 0.92307692em;
   }
   #site-header #nav-container {
     padding: 24px 0;
@@ -7984,7 +7987,7 @@ body {
     width: 100%;
   }
   #site-header #nav-container nav li a i {
-    font-size: 1.692em;
+    font-size: 1.69230769em;
     vertical-align: middle;
   }
   #site-header #nav-container nav li a span {
@@ -8005,7 +8008,7 @@ body {
     text-decoration: none;
   }
   #site-header footer .fa {
-    font-size: 1.079em;
+    font-size: 1.07692308em;
   }
   #site-header footer .fa-heart {
     color: #e51c23;
