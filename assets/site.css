@@ -7865,24 +7865,23 @@ body {
   margin-bottom: 14px;
 }
 #posts .post .post-date {
+  font-weight: 500;
   padding-right: 0;
 }
 #posts .post .post-date .post-day {
   color: #bdbdbd;
   display: inline-block;
-  font-weight: bold;
   letter-spacing: -1px;
   margin-top: 0;
 }
 #posts .post .post-date .post-month-year {
   color: #212121;
   display: inline-block;
-  font-weight: 600;
-  font-size: 1.23076923em;
+  font-size: 1.07692308em;
 }
 #posts .post .post-title {
   margin-top: 0;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: -1px;
 }
 #posts .post .post-title a {
