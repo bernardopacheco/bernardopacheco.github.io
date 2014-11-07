@@ -7903,6 +7903,21 @@ body {
 #posts .post .post-share .share-social-medias {
   margin-top: 10px;
 }
+#posts .post .post-share .share-social-medias li {
+  vertical-align: top;
+}
+#posts .post .post-share .share-social-medias .twitter-social-media {
+  width: 100px;
+}
+#posts .post .post-share .share-social-medias .facebook-social-media {
+  width: 105px;
+}
+#posts .post .post-share .share-social-medias .google-plus-social-media {
+  width: 80px;
+}
+#posts .post .post-share .share-social-medias .linkedin-social-media {
+  width: 120px;
+}
 #posts .post .post-reading-link {
   font-size: 0.75em;
   font-weight: 500;

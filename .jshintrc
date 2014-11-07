@@ -55,5 +55,6 @@
   "node": true,
 
   "globals": {
+    "FB": true
   }
 }
