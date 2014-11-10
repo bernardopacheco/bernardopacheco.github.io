@@ -1,3 +1,9 @@
+---
+title: Dependency hell with Bower and npm
+author: Bernardo Pacheco
+layout: post
+---
+
 Esse artigo trata do problema que encontramos com dependências no bower e no npm.
 
 O problema ocorre quando vc faz um bower install e/ou npm install. Tudo instala numa boa, mas quando vc vai rodar um projeto que estava funcionando há algumas semanas atrás, tudo quebra. Por quê?
