@@ -30,31 +30,13 @@ layout: default
             </h2>
             <!--title-->
 
-            <div class="post-body">
+            <section class="post-content">
               {{ post.excerpt }}
-            </div>
+            </section>
             <!--body-->
 
-            <div class="post-share">
-
-              <span class="share-title">Share on:</span>
-
-              <ul class="share-social-medias list-inline">
-                <li class="twitter-social-media">
-                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ post.url | prepend: site.url }}" data-text="{{ post.title }}">Tweet</a>
-                </li>
-                <li class="facebook-social-media">
-                  <div class="fb-share-button" data-href="{{ post.url | prepend: site.url }}" data-layout="button_count"></div>
-                </li>
-                <li class="google-plus-social-media">
-                  <div class="g-plusone" data-size="medium" data-href="{{ post.url | prepend: site.url }}"></div>
-                </li>
-                <li class="linkedin-social-media">
-                  <script type="IN/Share" data-url="{{ post.url | prepend: site.url }}" data-counter="right" data-showzero="true"></script>
-                </li>
-              </ul>
-
-            </div>
+            {% include share.html %}
+            <!-- share -->
 
             <div class="post-reading-link text-uppercase">
               <a href="{{ post.url }}">Continue reading&nbsp;<i class="fa fa-angle-double-right"></i></a>

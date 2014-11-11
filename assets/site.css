@@ -7860,83 +7860,83 @@ body {
     margin: 0 0 0 280px;
   }
 }
+#posts .post-reading-link {
+  font-size: 0.75em;
+  font-weight: 500;
+  margin-top: 20px;
+}
+#posts .post-reading-link a {
+  color: #e51c23;
+}
 /* Extra small devices (phones) */
-#posts .post {
+.post {
   background-color: #ffffff;
   border: 1px solid #bdbdbd;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
   padding: 14px;
   margin-bottom: 14px;
 }
-#posts .post .post-date {
+.post .post-date {
   padding-right: 0;
 }
-#posts .post .post-date .post-day {
+.post .post-date .post-day {
   color: #bdbdbd;
   display: inline-block;
   margin-top: 0;
 }
-#posts .post .post-date .post-month-year {
+.post .post-date .post-month-year {
   color: #212121;
   display: inline-block;
 }
-#posts .post .post-title {
+.post .post-title {
   margin-top: 0;
 }
-#posts .post .post-title a {
+.post .post-title a {
   color: #212121;
   text-decoration: none;
 }
-#posts .post .post-body {
+.post .post-content {
   color: #212121;
 }
-#posts .post .post-share {
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .post .post-date {
+    text-align: center;
+  }
+  .post .post-date .post-day {
+    display: block;
+  }
+  .post .post-date .post-month-year {
+    display: block;
+  }
+}
+.post-share {
   margin-top: 25px;
 }
-#posts .post .post-share .share-title {
+.post-share .share-title {
   border-top: 1px solid #e0e0e0;
   color: #757575;
   font-size: 0.75em;
   font-weight: normal;
   padding-top: 10px;
 }
-#posts .post .post-share .share-social-medias {
+.post-share .share-social-medias {
   margin-top: 10px;
 }
-#posts .post .post-share .share-social-medias li {
+.post-share .share-social-medias li {
   vertical-align: top;
 }
-#posts .post .post-share .share-social-medias .twitter-social-media {
+.post-share .share-social-medias .twitter-social-media {
   width: 100px;
 }
-#posts .post .post-share .share-social-medias .facebook-social-media {
+.post-share .share-social-medias .facebook-social-media {
   width: 105px;
 }
-#posts .post .post-share .share-social-medias .google-plus-social-media {
+.post-share .share-social-medias .google-plus-social-media {
   width: 80px;
 }
-#posts .post .post-share .share-social-medias .linkedin-social-media {
+.post-share .share-social-medias .linkedin-social-media {
   width: 120px;
-}
-#posts .post .post-reading-link {
-  font-size: 0.75em;
-  font-weight: 500;
-  margin-top: 20px;
-}
-#posts .post .post-reading-link a {
-  color: #e51c23;
-}
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #posts .post .post-date {
-    text-align: center;
-  }
-  #posts .post .post-date .post-day {
-    display: block;
-  }
-  #posts .post .post-date .post-month-year {
-    display: block;
-  }
 }
 /* Extra small devices (phones) */
 #site-header {

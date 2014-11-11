@@ -1,123 +1,13 @@
-/* Extra small devices (phones) */
-
 #posts {
 
-  .post {
+  .post-reading-link {
 
-    background-color: @white;
-    border: 1px solid @hint-text;
-    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
-    padding: 14px;
-    margin-bottom: 14px;
+    font-size: ( 12px / @font-size-base ) * 1em;
+    font-weight: 500;
+    margin-top: 20px;
 
-    .post-date {
-
-      padding-right: 0;
-
-      .post-day {
-
-        color: @hint-text;
-        display: inline-block;
-        margin-top: 0;
-      }
-
-      .post-month-year {
-
-        color: @text-color;
-        display: inline-block;
-      }
-    }
-
-    .post-title {
-
-      margin-top: 0;
-
-      a {
-
-        color: @text-color;
-        text-decoration: none;
-      }
-    }
-
-    .post-body {
-      color: @text-color;
-    }
-
-    .post-share {
-
-      margin-top: 25px;
-
-      .share-title {
-
-        border-top: 1px solid @dividers;
-        color: @secondary-text;
-        font-size: ( 12px / @font-size-base ) * 1em;
-        font-weight: normal;
-        padding-top: 10px;
-      }
-
-      .share-social-medias {
-
-        margin-top: 10px;
-
-        li {
-          vertical-align: top;
-        }
-
-        .twitter-social-media {
-          width: 100px;
-        }
-
-        .facebook-social-media {
-          width: 105px;
-        }
-
-        .google-plus-social-media {
-          width: 80px;
-        }
-
-        .linkedin-social-media {
-          width: 120px;
-        }
-      }
-    }
-
-    .post-reading-link {
-
-      font-size: ( 12px / @font-size-base ) * 1em;
-      font-weight: 500;
-      margin-top: 20px;
-
-      a {
-        color: @red;
-      }
+    a {
+      color: @red;
     }
   }
 }
-
-
-/* Medium devices (desktops, 992px and up) */
-
-@media ( min-width: @screen-md-min ) {
-
-  #posts {
-
-    .post {
-
-      .post-date {
-
-        text-align: center;
-
-        .post-day {
-          display: block;
-        }
-
-        .post-month-year {
-          display: block;
-        }
-      }
-    }
-  }
-}
-
-
