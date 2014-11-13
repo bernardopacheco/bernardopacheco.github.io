@@ -52,19 +52,19 @@
     fjs.parentNode.insertBefore( js, fjs );
   }( document, 'script', 'facebook-jssdk' ));
 
-  // Disqus
+  // Disqus count
 
   var disqus_shortname = 'bernardopacheco';
 
-  (function() {
+  (function () {
 
-    var dsq = document.createElement('script');
+    var s = document.createElement('script');
 
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
 
-    ( document.getElementsByTagName('head')[ 0 ] || document.getElementsByTagName('body')[ 0 ] ).appendChild( dsq );
-  })();
+    ( document.getElementsByTagName('HEAD')[ 0 ] || document.getElementsByTagName('BODY')[ 0 ] ).appendChild( s );
+  }());
 
 })( this, document );

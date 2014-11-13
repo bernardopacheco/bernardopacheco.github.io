@@ -28,6 +28,8 @@ layout: default
             </h2>
             <!-- title -->
 
+            <a href="#disqus_thread">Comments</a>
+
             <section class="post-content">
               {{ content }}
             </section>
@@ -50,3 +52,25 @@ layout: default
   </div>
 
 </section>
+
+<script type="text/javascript">
+
+  // Disqus widget
+
+  var disqus_identifier = '{{ page.path }}',
+    disqus_shortname = 'bernardopacheco',
+    disqus_title = '{{ page.title }}',
+    disqus_url = '{{ page.url | prepend: site.url }}';
+
+  (function() {
+
+    var dsq = document.createElement('script');
+
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+    ( document.getElementsByTagName('head')[ 0 ] || document.getElementsByTagName('body')[ 0 ] ).appendChild( dsq );
+  })();
+
+</script>
