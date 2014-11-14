@@ -4,10 +4,10 @@ description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-url: "http://bernardopacheco.net"
+url: http://bernardopacheco.net
 exclude: [ 'README.md', 'src/', 'node_modules', 'bower_components', 'package.json', 'bower.json', 'Gruntfile.js' ]
 twitter_username: jekyllrb
-github_username:  jekyll
+github_url: //github.com/bernardopacheco
 
 # Build settings
 markdown: kramdown

@@ -14,14 +14,14 @@
 
     .post-day {
 
-      color: @hint-text;
+      color: @secondary-text;
       display: inline-block;
       margin-top: 0;
     }
 
     .post-month-year {
 
-      color: @text-color;
+      color: @secondary-text;
       display: inline-block;
     }
   }
@@ -34,6 +34,26 @@
 
       color: @text-color;
       text-decoration: none;
+    }
+  }
+
+  .post-meta {
+
+    font-size: ( 14px / @font-size-base ) * 1em;
+    margin-bottom: 15px;
+
+    a {
+
+      color: @secondary-text;
+      text-decoration: none;
+
+      &:hover {
+        color: @text-color;
+      }
+
+      &:last-child {
+        margin-left: 24px;
+      }
     }
   }
 

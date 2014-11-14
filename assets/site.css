@@ -7880,12 +7880,12 @@ body {
   padding-right: 0;
 }
 .post .post-date .post-day {
-  color: #bdbdbd;
+  color: #757575;
   display: inline-block;
   margin-top: 0;
 }
 .post .post-date .post-month-year {
-  color: #212121;
+  color: #757575;
   display: inline-block;
 }
 .post .post-title {
@@ -7894,6 +7894,20 @@ body {
 .post .post-title a {
   color: #212121;
   text-decoration: none;
+}
+.post .post-meta {
+  font-size: 0.875em;
+  margin-bottom: 15px;
+}
+.post .post-meta a {
+  color: #757575;
+  text-decoration: none;
+}
+.post .post-meta a:hover {
+  color: #212121;
+}
+.post .post-meta a:last-child {
+  margin-left: 24px;
 }
 .post .post-content {
   color: #212121;
