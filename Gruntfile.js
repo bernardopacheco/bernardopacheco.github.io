@@ -3,6 +3,7 @@ module.exports = function( grunt ) {
 
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -13,6 +14,8 @@ module.exports = function( grunt ) {
   config = {
 
     pkg: grunt.file.readJSON('package.json'),
+
+    jekyllConfig: grunt.file.readYAML('_config.yml'),
 
     meta: {
       banner: '/*!\n' +
@@ -32,17 +35,11 @@ module.exports = function( grunt ) {
         dest: 'assets',
         expand: true,
         cwd: 'bower_components/font-awesome'
-      },
-      js: {
-        src: 'scripts.js',
-        dest: 'assets',
-        expand: true,
-        cwd: 'src/js'
       }
     },
 
     jshint: {
-      files: [ 'src/js/*.js' ],
+      files: [ 'src/js/*.js', '!src/js/linkedin.js' ],
       options: {
         jshintrc: '.jshintrc'
       }
@@ -91,7 +88,60 @@ module.exports = function( grunt ) {
 
   grunt.renameTask( 'watch', 'delta' );
   grunt.registerTask( 'watch', [ 'build', 'delta' ] );
-  grunt.registerTask( 'build', [ 'clean', 'jshint', 'copy', 'less:build' ] );
+  grunt.registerTask( 'build', [ 'clean', 'jshint', 'copy', 'concatScripts', 'less:build' ] );
   grunt.registerTask( 'dist', [ 'less:dist', 'uglify' ] );
   grunt.registerTask( 'default', [ 'build', 'dist' ] );
+
+  grunt.registerTask( 'concatScripts', 'concat scripts based on jekyll configuration file _config.yml', function() {
+
+    // concat task provides a process function to load dynamic scripts parameters
+    var concat = {
+        js: {
+          dest: 'assets/scripts.js',
+          options: {
+            process: function( content, srcPath ) {
+              return grunt.template.process( content );
+            }
+          }
+        }
+      },
+      jekyllConfig = grunt.config.get('jekyllConfig'),
+      scriptSrc = [];
+
+    scriptSrc.push('src/js/module.prefix');
+
+    // only put scripts that will be used
+
+    if ( jekyllConfig.share.twitter ) {
+      scriptSrc.push('src/js/twitter.js');
+    }
+
+    if ( jekyllConfig.share.facebook ) {
+      scriptSrc.push('src/js/facebook.js');
+    }
+
+    if ( jekyllConfig.share.google_plus ) {
+      scriptSrc.push('src/js/google-plus.js');
+    }
+
+    if ( jekyllConfig.share.disqus ) {
+      scriptSrc.push('src/js/disqus.js');
+    }
+
+    scriptSrc.push('src/js/module.suffix');
+
+    // explicitly put the linkedIn code out of the immediate function to work
+    if ( jekyllConfig.share.linkedin ) {
+      scriptSrc.push('src/js/linkedin.js');
+    }
+
+    // set source
+    concat.js.src = scriptSrc;
+
+    // set a new task configuration
+    grunt.config.set( 'concat', concat );
+
+    // execute task
+    grunt.task.run('concat');
+  });
 };

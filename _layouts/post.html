@@ -29,8 +29,10 @@ layout: default
             <!-- title -->
 
             <div class="post-meta">
+              {% if site.share.disqus %}
               <a href="#disqus_thread">123 Comments</a>
-              <a href="{{ site.github_url }}/bernardopacheco.github.io/blob/master/{{ page.path }}" target="_blank"><i class="fa fa-github"></i>&nbsp;Edit this post on GitHub</a>
+              {% endif %}
+              <a href="//github.com//{{ site.github_username }}.github.io/blob/master/{{ page.path }}" target="_blank"><i class="fa fa-github"></i>&nbsp;Edit this post on GitHub</a>
             </div>
 
             <section class="post-content">
@@ -38,12 +40,16 @@ layout: default
             </section>
             <!-- content -->
 
-            {% assign isPage = true %}
-            {% include share.html %}
+            {% if site.share.twitter or site.share.facebook or site.share.google_plus or site.share.linkedin %}
+              {% assign isPage = true %}
+              {% include share.html %}
+            {% endif %}
             <!-- share -->
 
             <footer class="post-footer">
+              {% if site.share.disqus %}
               <div id="disqus_thread"></div>
+              {% endif %}
             </footer>
 
           </div>
@@ -56,12 +62,13 @@ layout: default
 
 </section>
 
+{% if site.share.disqus %}
 <script type="text/javascript">
 
   // Disqus widget
 
   var disqus_identifier = '{{ page.path }}',
-    disqus_shortname = 'bernardopacheco',
+    disqus_shortname = '{{ site.disqus_username }}',
     disqus_title = '{{ page.title }}',
     disqus_url = '{{ page.url | prepend: site.url }}';
 
@@ -77,3 +84,4 @@ layout: default
   })();
 
 </script>
+{% endif %}

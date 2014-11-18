@@ -3,20 +3,20 @@
   <div id="avatar-container">
 
     <a href="/">
-      <img src="//avatars1.githubusercontent.com/u/5872815?v=2&s=460" class="img-rounded"/>
+      <img src="{{ site.author.picture }}" class="img-rounded"/>
     </a>
 
-    <p id="name">{{ site.title }}</p>
+    <p id="name">{{ site.author.name }}</p>
 
-    <p id="intro" class="visible-md-block visible-lg-block">JavaScript software engineer</p>
+    <p id="intro" class="visible-md-block visible-lg-block">{{ site.author.description }}</p>
 
     <nav>
 
       <ul id="nav" class="list-inline hidden-md hidden-lg">
         <li><a href="/"><i class="fa fa-pencil-square-o fa-fw"></i>&nbsp;<span>Posts</span></a></li>
         <li><a href="/about"><i class="fa fa-info fa-fw"></i>&nbsp;<span>About</span></a></li>
-        <li><a href="//bernardopacheco.net/feed.xml" target="_blank"><i class="fa fa-rss fa-fw"></i>&nbsp;<span>RSS</span></a></li>
-        <li><a href="{{ site.github_url }}" target="_blank"><i class="fa fa-github fa-fw"></i>&nbsp;<span>GitHub</span></a></li>
+        <li><a href="{{ site.url }}/feed.xml" target="_blank"><i class="fa fa-rss fa-fw"></i>&nbsp;<span>RSS</span></a></li>
+        <li><a href="//github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github fa-fw"></i>&nbsp;<span>GitHub</span></a></li>
       </ul>
 
     </nav>
@@ -32,8 +32,8 @@
       <ul class="list-unstyled">
         <li><a href="/"><i class="fa fa-pencil-square-o fa-fw"></i>&nbsp;<span>Posts</span></a></li>
         <li><a href="/about"><i class="fa fa-info fa-fw"></i>&nbsp;<span>About</span></a></li>
-        <li><a href="//bernardopacheco.net/feed.xml" target="_blank"><i class="fa fa-rss fa-fw"></i>&nbsp;<span>RSS</span></a></li>
-        <li><a href="//github.com/bernardopacheco" target="_blank"><i class="fa fa-github fa-fw"></i>&nbsp;<span>GitHub</span></a></li>
+        <li><a href="{{ site.url }}/feed.xml" target="_blank"><i class="fa fa-rss fa-fw"></i>&nbsp;<span>RSS</span></a></li>
+        <li><a href="//github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github fa-fw"></i>&nbsp;<span>GitHub</span></a></li>
       </ul>
 
     </nav>
@@ -42,7 +42,7 @@
   <!-- menu -->
 
   <footer class="visible-md-block visible-lg-block">
-    <a href="{{ site.github_url }}/bernardopacheco.github.io" target="_blank">Hosted with <i class="fa fa-heart"></i>&nbsp;by&nbsp;<i class="fa fa-github"></i></a>
+    <a href="//github.com/{{ site.github_username }}/{{ site.github_username }}.github.io" target="_blank">Hosted with <i class="fa fa-heart"></i>&nbsp;by&nbsp;<i class="fa fa-github"></i></a>
   </footer>
   <!-- footer -->
 

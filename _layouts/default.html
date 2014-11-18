@@ -15,8 +15,9 @@
       </div>
     </div>
 
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+    {% if site.share.twitter or site.share.facebook or site.share.google_plus or site.share.linkedin or site.share.disqus %}
     <script src="/assets/scripts.js"></script>
+    {% endif %}
 
   </body>
 

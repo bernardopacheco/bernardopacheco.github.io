@@ -7902,12 +7902,10 @@ body {
 .post .post-meta a {
   color: #757575;
   text-decoration: none;
+  margin-right: 24px;
 }
 .post .post-meta a:hover {
   color: #212121;
-}
-.post .post-meta a:last-child {
-  margin-left: 24px;
 }
 .post .post-content {
   color: #212121;

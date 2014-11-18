@@ -35,7 +35,9 @@ layout: default
             </section>
             <!-- body -->
 
-            {% include share.html %}
+            {% if site.share.twitter or site.share.facebook or site.share.google_plus or site.share.linkedin %}
+              {% include share.html %}
+            {% endif %}
             <!-- share -->
 
             <div class="post-reading-link text-uppercase">
