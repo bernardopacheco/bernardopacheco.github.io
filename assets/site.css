@@ -7838,10 +7838,12 @@ button.close {
   content: "\f20c";
 }
 ::selection {
-  background: #f9bdbb;
+  background: #ff4081;
+  color: #ffffff;
 }
 ::-moz-selection {
-  background: #f9bdbb;
+  background: #ff4081;
+  color: #ffffff;
 }
 p {
   line-height: 1.5em;
@@ -7849,6 +7851,12 @@ p {
 h1,
 h2 {
   font-weight: 400;
+}
+a {
+  color: #f50057;
+}
+a:hover {
+  color: #f50057;
 }
 /* Extra small devices (phones) */
 body {
@@ -7865,9 +7873,6 @@ body {
   font-weight: 500;
   margin-top: 20px;
 }
-#posts .post-reading-link a {
-  color: #e51c23;
-}
 /* Extra small devices (phones) */
 .post {
   background-color: #ffffff;
@@ -7880,12 +7885,12 @@ body {
   padding-right: 0;
 }
 .post .post-date .post-day {
-  color: #757575;
+  color: #212121;
   display: inline-block;
   margin-top: 0;
 }
 .post .post-date .post-month-year {
-  color: #757575;
+  color: #212121;
   display: inline-block;
 }
 .post .post-title {
@@ -7901,12 +7906,8 @@ body {
 }
 .post .post-meta a {
   color: #757575;
-  text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
-}
-.post .post-meta a:hover {
-  color: #212121;
 }
 .post .post-content {
   color: #212121;
@@ -8015,6 +8016,7 @@ body {
     width: 100%;
   }
   #site-header #nav-container nav li a i {
+    color: #212121;
     font-size: 1.25em;
     vertical-align: middle;
   }

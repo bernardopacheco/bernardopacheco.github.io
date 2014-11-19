@@ -1,10 +1,14 @@
 // Text selection background color
 
 ::selection {
-  background: @red-100;
+
+  background: @accent-200;
+  color: @white;
 }
 ::-moz-selection {
-  background: @red-100;
+
+  background: @accent-200;
+  color: @white;
 }
 
 // Paragraph
@@ -17,4 +21,15 @@ p {
 
 h1, h2 {
   font-weight: 400;
+}
+
+// Link
+
+a {
+
+  color: @accent-400;
+
+  &:hover {
+    color: @accent-400;
+  }
 }
