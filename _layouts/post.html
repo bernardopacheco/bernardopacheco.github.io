@@ -29,11 +29,18 @@ layout: default
             <!-- title -->
 
             <div class="post-meta">
-              {% if site.share.disqus %}
-              <a href="#disqus_thread">123 Comments</a>
-              {% endif %}
-              <a href="//github.com//{{ site.github_username }}.github.io/blob/master/{{ page.path }}" target="_blank"><i class="fa fa-github"></i>&nbsp;Edit this post on GitHub</a>
+              <ul class="list-inline">
+                <li>
+                  {% if site.share.disqus %}
+                  <a href="#disqus_thread">0 Comments</a>
+                  {% endif %}
+                </li>
+                <li>
+                  <a href="//github.com/{{ site.github_username }}/{{ site.github_username }}.github.io/blob/master/{{ page.path }}" target="_blank"><i class="fa fa-github"></i>&nbsp;Edit this post on GitHub</a>
+                </li>
+              </ul>
             </div>
+            <!-- meta -->
 
             <section class="post-content">
               {{ content }}

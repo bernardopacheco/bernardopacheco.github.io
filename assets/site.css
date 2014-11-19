@@ -7896,13 +7896,14 @@ body {
   text-decoration: none;
 }
 .post .post-meta {
-  font-size: 0.875em;
+  font-size: 0.75em;
   margin-bottom: 15px;
 }
 .post .post-meta a {
   color: #757575;
   text-decoration: none;
-  margin-right: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 .post .post-meta a:hover {
   color: #212121;
