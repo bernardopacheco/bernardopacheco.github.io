@@ -7871,7 +7871,6 @@ body {
 #posts .post-reading-link {
   font-size: 0.75em;
   font-weight: 500;
-  margin-top: 20px;
 }
 /* Extra small devices (phones) */
 .post {
@@ -7925,17 +7924,18 @@ body {
   }
 }
 .post-share {
-  margin-top: 25px;
+  background-color: #f5f5f5;
+  margin: 15px 0;
+  padding: 10px;
 }
 .post-share .share-title {
-  border-top: 1px solid #e0e0e0;
   color: #757575;
   font-size: 0.75em;
   font-weight: normal;
-  padding-top: 10px;
 }
 .post-share .share-social-medias {
   margin-top: 10px;
+  margin-bottom: 0;
 }
 .post-share .share-social-medias li {
   vertical-align: top;
@@ -8025,7 +8025,7 @@ body {
     margin-left: 24px;
   }
   #site-header #nav-container nav li:hover {
-    background-color: #e0e0e0;
+    background-color: #f5f5f5;
   }
   #site-header footer {
     bottom: 0;
