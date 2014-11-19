@@ -45,7 +45,9 @@ layout: default
             <!-- meta -->
 
             <section class="post-content">
-              {{ post.excerpt }}
+              <p>
+              {{ post.excerpt | remove: '<p>' | remove: '.</p>' | append: '[...]' }}
+              </p>
             </section>
             <!-- content -->
 
