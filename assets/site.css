@@ -7837,6 +7837,9 @@ button.close {
 .fa-meanpath:before {
   content: "\f20c";
 }
+body {
+  background-color: #e0e0e0;
+}
 ::selection {
   background: #ff4081;
   color: #ffffff;
@@ -7858,19 +7861,11 @@ a {
 a:hover {
   color: #f50057;
 }
-/* Extra small devices (phones) */
-body {
-  background-color: #e0e0e0;
-}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #page-content {
     margin: 0 0 0 280px;
   }
-}
-#posts .post-reading-link {
-  font-size: 0.75em;
-  font-weight: 500;
 }
 /* Extra small devices (phones) */
 .post {
@@ -7910,6 +7905,11 @@ body {
 }
 .post .post-content {
   color: #212121;
+}
+.post .post-reading-link {
+  font-size: 0.75em;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
