@@ -9,9 +9,24 @@
 
     <div id="page-content" class="container">
       <div class="row">
-        <div class="col-sm-9 col-md-11 col-lg-9">
+        <div class="col-sm-8 col-md-8 col-lg-7">
           {{ content }}
         </div>
+        <aside class="col-sm-4 col-lg-3 visible-sm-block visible-lg-block">
+          <section>
+
+            <h4>Recent Posts</h4>
+
+            <ul>
+            {% for post in site.posts limit:5 %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+            </ul>
+
+          </section>
+        </aside>
       </div>
     </div>
 

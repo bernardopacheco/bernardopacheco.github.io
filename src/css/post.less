@@ -2,11 +2,7 @@
 
 .post {
 
-  background-color: @white;
-  border: 1px solid @hint-text;
-  box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
-  padding: 14px;
-  margin-bottom: 14px;
+  .card;
 
   .post-date {
 
@@ -16,7 +12,6 @@
 
       color: @text-color;
       display: inline-block;
-      margin-top: 0;
     }
 
     .post-month-year {
@@ -27,8 +22,6 @@
   }
 
   .post-title {
-
-    margin-top: 0;
 
     a {
 
@@ -80,5 +73,14 @@
         display: block;
       }
     }
+  }
+}
+
+/* Small devices (tablets, smartphones, until 768px) */
+
+@media ( max-width: @screen-sm-max ) {
+
+  .post-title {
+    margin-top: 0;
   }
 }
