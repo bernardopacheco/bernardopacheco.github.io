@@ -7870,30 +7870,39 @@ a:hover {
   margin-bottom: 14px;
 }
 aside {
+  margin-top: 78px;
   background-color: #ffffff;
   border: 1px solid #bdbdbd;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
   padding: 0 14px 22px 14px;
   margin-bottom: 14px;
-  margin-top: 78px;
+}
+aside section {
   font-size: 0.875em;
 }
-aside h4 {
+aside section h4 {
   margin-top: 22px;
 }
-aside ul {
+aside section ul {
   padding-left: 18px;
   font-size: 16px;
   margin-bottom: 0;
 }
-aside ul li {
+aside section ul li {
   margin-bottom: 5px;
 }
-aside ul li:last-child {
+aside section ul li:last-child {
   margin-bottom: 0;
 }
-aside ul li a {
+aside section ul li span {
+  color: #757575;
   font-size: 0.875em;
+}
+aside section ul li a {
+  font-size: 0.875em;
+}
+aside #recent-comments-section {
+  display: none;
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -8009,7 +8018,6 @@ aside ul li a {
 #site-header #avatar-container #name {
   color: #ffffff;
   font-size: 1.25em;
-  font-weight: 300;
   margin-top: 10px;
 }
 #site-header #avatar-container nav {

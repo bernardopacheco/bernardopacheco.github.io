@@ -12,7 +12,8 @@
         <div class="col-sm-8 col-md-8 col-lg-7">
           {{ content }}
         </div>
-        <aside class="col-sm-4 col-lg-3 visible-sm-block visible-lg-block">
+        <aside class="col-sm-4 col-lg-4 visible-sm-block visible-lg-block">
+
           <section>
 
             <h4>Recent Posts</h4>
@@ -26,6 +27,17 @@
             </ul>
 
           </section>
+          <!-- recent posts -->
+
+          {% if site.share.disqus %}
+          <section id="recent-comments-section">
+
+            <h4>Recent Comments</h4>
+
+          </section>
+          <!-- recent comments -->
+          {% endif %}
+
         </aside>
       </div>
     </div>

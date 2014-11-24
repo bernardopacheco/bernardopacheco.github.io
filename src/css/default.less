@@ -1,31 +1,45 @@
 aside {
 
-  .card;
   margin-top: 78px;
-  font-size: ( 14px / @font-size-base ) * 1em;
+  .card;
 
-  h4 {
-    margin-top: 22px;
-  }
+  section {
 
-  ul {
+    font-size: ( 14px / @font-size-base ) * 1em;
 
-    padding-left: 18px;
-    font-size: @font-size-base;
-    margin-bottom: 0;
+    h4 {
+      margin-top: 22px;
+    }
 
-    li {
+    ul {
 
-      margin-bottom: 5px;
+      padding-left: 18px;
+      font-size: @font-size-base;
+      margin-bottom: 0;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
+      li {
 
-      a {
-        font-size: ( 14px / @font-size-base ) * 1em;
+        margin-bottom: 5px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        span {
+          
+          color: @secondary-text;
+          font-size: ( 14px / @font-size-base ) * 1em;
+        }
+
+        a {
+          font-size: ( 14px / @font-size-base ) * 1em;
+        }
       }
     }
+  }
+
+  #recent-comments-section {
+    display: none;
   }
 }
 

@@ -24,8 +24,10 @@ share:
 # if share.facebook is true, provide your facebook app id
 facebook_app_id: 730635297031262
 
-# if share.disqus is true, provide your disqus shortname
+# if share.disqus is true, provide your disqus shortname, the api key and the number of comments to display
 disqus_username: bernardopacheco
+disqus_api_key: o2szu05bLNqiXiRvqe2oFvIHYYVR24eVkQiGs5WHcj0VUnvF8GCqD9HQUZErwCe7
+disqus_recent_comments_to_display: 5
 
 markdown: kramdown
 exclude: [ 'README.md', 'src/', 'node_modules', 'bower_components', 'package.json', 'bower.json', 'Gruntfile.js' ]
