@@ -7934,13 +7934,11 @@ aside #recent-comments-section {
   text-decoration: none;
 }
 .post .post-meta {
-  font-size: 0.75em;
+  font-size: 0.875em;
   margin-bottom: 15px;
 }
 .post .post-meta a {
   color: #757575;
-  text-transform: uppercase;
-  font-weight: 500;
 }
 .post .post-content {
   color: #212121;
