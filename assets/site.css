@@ -8086,4 +8086,8 @@ aside #recent-comments-section {
   #site-header footer .fa-heart {
     color: #e51c23;
   }
+  #site-header footer ul {
+    display: none;
+    margin-bottom: 0;
+  }
 }

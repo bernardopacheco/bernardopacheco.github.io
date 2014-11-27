@@ -2,6 +2,31 @@
 
   'use strict';
 
+(function() {
+
+  var s = document.createElement('script'),
+    githubApiUrl = 'https://api.github.com/repos/',
+    owner = 'bernardopacheco',
+    repo = owner + '.github.io';
+
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = githubApiUrl + owner + '/' + repo + '?callback=' + owner + '.getGitHubRepoInfo';
+
+  window[ owner ] = window[ owner ] || {};
+  window[ owner ].getGitHubRepoInfo = function( response ) {
+
+    var stargazers = response.data.stargazers_count,
+      forks = response.data.forks_count;
+
+    document.getElementById('stargazers').innerText = stargazers;
+    document.getElementById('forks').innerText = forks;
+    document.getElementById('github-repo-info').style.display = 'block';
+  };
+
+  document.getElementsByTagName('HEAD')[ 0 ].appendChild( s );
+}());
+
 (function( d, s, id ){
   var js,
       fjs = d.getElementsByTagName( s )[ 0 ],
@@ -63,17 +88,17 @@ window.fbAsyncInit = function() {
 (function() {
 
   var s = document.createElement('script'),
-    namespace = 'bernardopacheco',
+    owner = 'bernardopacheco',
     disqusApiUrl = 'https://disqus.com/api/3.0/forums/listPosts.jsonp?forum=',
     forum = 'bernardopacheco',
     apiKey = 'o2szu05bLNqiXiRvqe2oFvIHYYVR24eVkQiGs5WHcj0VUnvF8GCqD9HQUZErwCe7';
 
   s.type = 'text/javascript';
   s.async = true;
-  s.src = disqusApiUrl + forum + '&related=thread&api_key=' + apiKey + '&callback=' + namespace + '.getRecentComments';
+  s.src = disqusApiUrl + forum + '&related=thread&api_key=' + apiKey + '&callback=' + owner + '.getRecentComments';
 
-  window[ namespace ] = {};
-  window[ namespace ].getRecentComments = function( data ) {
+  window[ owner ] = window[ owner ] || {};
+  window[ owner ].getRecentComments = function( data ) {
 
     if ( !isThereComment() ) {
       return;

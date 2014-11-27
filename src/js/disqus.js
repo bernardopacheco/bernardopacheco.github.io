@@ -15,17 +15,17 @@
 (function() {
 
   var s = document.createElement('script'),
-    namespace = '<%= jekyllConfig.github_username %>',
+    owner = '<%= jekyllConfig.github_username %>',
     disqusApiUrl = 'https://disqus.com/api/3.0/forums/listPosts.jsonp?forum=',
     forum = '<%= jekyllConfig.disqus_username %>',
     apiKey = '<%= jekyllConfig.disqus_api_key %>';
 
   s.type = 'text/javascript';
   s.async = true;
-  s.src = disqusApiUrl + forum + '&related=thread&api_key=' + apiKey + '&callback=' + namespace + '.getRecentComments';
+  s.src = disqusApiUrl + forum + '&related=thread&api_key=' + apiKey + '&callback=' + owner + '.getRecentComments';
 
-  window[ namespace ] = {};
-  window[ namespace ].getRecentComments = function( data ) {
+  window[ owner ] = window[ owner ] || {};
+  window[ owner ].getRecentComments = function( data ) {
 
     if ( !isThereComment() ) {
       return;

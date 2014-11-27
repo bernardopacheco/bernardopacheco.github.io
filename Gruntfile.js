@@ -110,6 +110,8 @@ module.exports = function( grunt ) {
 
     scriptSrc.push('src/js/module.prefix');
 
+    scriptSrc.push('src/js/github.js');
+
     // only put scripts that will be used
 
     if ( jekyllConfig.share.twitter ) {
