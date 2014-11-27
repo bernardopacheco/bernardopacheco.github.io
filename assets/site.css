@@ -8007,7 +8007,7 @@ aside #recent-comments-section {
 }
 #site-header #avatar-container {
   background-color: #3f51b5;
-  height: 215px;
+  min-height: 215px;
   padding: 22px;
   text-align: center;
 }
