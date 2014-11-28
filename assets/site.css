@@ -7910,6 +7910,22 @@ aside #recent-comments-section {
     margin: 0 0 0 280px;
   }
 }
+.pagination {
+  text-align: center;
+  width: 100%;
+}
+.pagination .btn {
+  background-color: #f50057;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+  border-color: #dc004e;
+  border-radius: 2px;
+  font-size: 0.75em;
+  font-weight: 500;
+}
+.pagination .btn:last-child {
+  margin-left: 5px;
+  width: 94px;
+}
 /* Extra small devices (phones) */
 .post {
   background-color: #ffffff;

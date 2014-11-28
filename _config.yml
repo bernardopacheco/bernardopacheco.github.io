@@ -11,7 +11,7 @@ description: site description
 url: http://bernardopacheco.net
 
 # number of posts per page
-paginate: 2
+paginate: 10
 
 # your github username
 github_username: bernardopacheco
