@@ -6,7 +6,7 @@ layout: default
 
   <h1>Posts</h1>
 
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
 
   <div class="row">
     <div class="col-sm-12">
@@ -71,5 +71,20 @@ layout: default
   </div>
 
   {% endfor %}
+
+  <div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" role="button" class="btn btn-primary"><i class="fa fa-angle-double-left"></i>&nbsp;Previous</a>
+    {% else %}
+    <button type="button" class="btn btn-primary" disabled="disabled">&nbsp;Previous<i class="fa fa-angle-double-left"></i></button>
+    {% endif %}
+    <span class="page_number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" role="button" class="btn btn-primary">Next&nbsp;<i class="fa fa-angle-double-right"></i></a>
+    {% else %}
+    <button type="button" class="btn btn-primary" disabled="disabled">Next&nbsp;<i class="fa fa-angle-double-right"></i></button>
+    {% endif %}
+  </div>
+  <!-- pagination -->
 
 </section>
