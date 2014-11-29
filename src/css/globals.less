@@ -21,6 +21,26 @@ p {
   line-height: ( 24px / @font-size-base ) * 1em;
 }
 
+// Code block
+
+pre {
+
+  font-size: @font-size-base;
+
+  code {
+    font-family: monospace;
+    font-size: ( 14px / @font-size-base ) * 1em;
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre;
+  }
+}
+
+code {
+  font-family: monospace;
+  font-size: ( 14px / @font-size-base ) * 1em;
+}
+
 // Headings
 
 h1, h2, h4 {

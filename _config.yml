@@ -33,4 +33,5 @@ disqus_api_key: o2szu05bLNqiXiRvqe2oFvIHYYVR24eVkQiGs5WHcj0VUnvF8GCqD9HQUZErwCe7
 disqus_recent_comments_to_display: 5
 
 markdown: kramdown
+highlighter: pygments
 exclude: [ 'README.md', 'src/', 'node_modules', 'bower_components', 'package.json', 'bower.json', 'Gruntfile.js' ]
