@@ -8,6 +8,7 @@ module.exports = function( grunt ) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-uncss');
 
   var config;
 
@@ -61,6 +62,20 @@ module.exports = function( grunt ) {
       }
     },
 
+    uncss: {
+      dist: {
+        options: {
+          media: [ '(min-width: 768px)', '(min-width: 992px)', '(min-width: 1200px)' ],
+          stylesheets: [ 'assets/site.css' ],
+          ignoreSheets: [ /fonts.googleapis/ ],
+          report: 'min'
+        },
+        files: {
+          'assets/site.css': [ '_site/index.html', '_site/about/index.html' ]
+        }
+      }
+    },
+
     uglify: {
       options: {
         banner: "<%= meta.banner %>"
@@ -89,7 +104,7 @@ module.exports = function( grunt ) {
   grunt.renameTask( 'watch', 'delta' );
   grunt.registerTask( 'watch', [ 'build', 'delta' ] );
   grunt.registerTask( 'build', [ 'clean', 'jshint', 'copy', 'concatScripts', 'less:build' ] );
-  grunt.registerTask( 'dist', [ 'less:dist', 'uglify' ] );
+  grunt.registerTask( 'dist', [ 'uncss', 'less:dist', 'uglify' ] );
   grunt.registerTask( 'default', [ 'build', 'dist' ] );
 
   grunt.registerTask( 'concatScripts', 'concat scripts based on jekyll configuration file _config.yml', function() {
