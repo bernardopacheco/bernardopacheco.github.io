@@ -63,7 +63,7 @@ module.exports = function( grunt ) {
         dest: '<%= project.assets.css %>'
       },
       dist: {
-        src: '<%= project.assets.css %>',
+        src: [ '<%= project.assets.css %>' ],
         dest: '<%= project.assets.css %>',
         options: {
           banner: '<%= meta.banner %>',
@@ -73,9 +73,13 @@ module.exports = function( grunt ) {
       }
     },
 
+    /*
+      ignore: do not remove code block highlight sytlesheet
+    */
     uncss: {
       dist: {
         options: {
+          ignore: [ 'pre', 'code', 'pre code', /\.highlight(\s\.\w{1,3}(\s\.\w)?)?/ ],
           media: [ '(min-width: 768px)', '(min-width: 992px)', '(min-width: 1200px)' ],
           stylesheets: [ '<%= project.assets.css %>' ],
           ignoreSheets: [ /fonts.googleapis/ ],
