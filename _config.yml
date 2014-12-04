@@ -10,6 +10,9 @@ description: site description
 # site url
 url: http://bernardopacheco.net
 
+# site version
+version: 1.0.0
+
 # number of posts per page
 paginate: 10
 

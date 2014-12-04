@@ -18,6 +18,17 @@ module.exports = function( grunt ) {
 
     jekyllConfig: grunt.file.readYAML('_config.yml'),
 
+    project: {
+      src: {
+        css: 'src/css',
+        js: 'src/js'
+      },
+      assets: {
+        css: 'assets/<%= jekyllConfig.github_username %>-<%= jekyllConfig.version %>.css',
+        js: 'assets/<%= jekyllConfig.github_username %>-<%= jekyllConfig.version %>.js'
+      }
+    },
+
     meta: {
       banner: '/*!\n' +
           ' * <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %>\n' +
@@ -40,7 +51,7 @@ module.exports = function( grunt ) {
     },
 
     jshint: {
-      files: [ 'src/js/*.js', '!src/js/linkedin.js' ],
+      files: [ '<%= project.src.js %>/*.js', '!<%= project.src.js %>/linkedin.js' ],
       options: {
         jshintrc: '.jshintrc'
       }
@@ -48,12 +59,12 @@ module.exports = function( grunt ) {
 
     less: {
       build: {
-        src: 'src/css/site.less',
-        dest: 'assets/site.css'
+        src: '<%= project.src.css %>/site.less',
+        dest: '<%= project.assets.css %>'
       },
       dist: {
-        src: 'assets/site.css',
-        dest: 'assets/site.css',
+        src: '<%= project.assets.css %>',
+        dest: '<%= project.assets.css %>',
         options: {
           banner: '<%= meta.banner %>',
           cleancss: true,
@@ -66,12 +77,12 @@ module.exports = function( grunt ) {
       dist: {
         options: {
           media: [ '(min-width: 768px)', '(min-width: 992px)', '(min-width: 1200px)' ],
-          stylesheets: [ 'assets/site.css' ],
+          stylesheets: [ '<%= project.assets.css %>' ],
           ignoreSheets: [ /fonts.googleapis/ ],
           report: 'min'
         },
         files: {
-          'assets/site.css': [ '_site/index.html', '_site/about/index.html' ]
+          '<%= project.assets.css %>': [ '_site/index.html', '_site/about/index.html' ]
         }
       }
     },
@@ -82,18 +93,18 @@ module.exports = function( grunt ) {
       },
       dist: {
         files: {
-          'assets/scripts.js': 'assets/scripts.js'
+          '<%= project.assets.js %>': '<%= project.assets.js %>'
         }
       }
     },
 
     delta: {
       jshint: {
-        files: [ 'src/js/**/*.js' ],
+        files: [ '<%= project.src.js %>/**/*.js' ],
         tasks: [ 'jshint', 'copy:js' ]
       },
       less: {
-        files: [ 'src/css/**/*.less' ],
+        files: [ '<%= project.src.css %>/**/*.less' ],
         tasks: [ 'less:build' ]
       }
     }
@@ -112,7 +123,7 @@ module.exports = function( grunt ) {
     // concat task provides a process function to load dynamic scripts parameters
     var concat = {
         js: {
-          dest: 'assets/scripts.js',
+          dest: '<%= project.assets.js %>',
           options: {
             process: function( content, srcPath ) {
               return grunt.template.process( content );
@@ -123,33 +134,33 @@ module.exports = function( grunt ) {
       jekyllConfig = grunt.config.get('jekyllConfig'),
       scriptSrc = [];
 
-    scriptSrc.push('src/js/module.prefix');
+    scriptSrc.push('<%= project.src.js %>/module.prefix');
 
-    scriptSrc.push('src/js/github.js');
+    scriptSrc.push('<%= project.src.js %>/github.js');
 
     // only put scripts that will be used
 
     if ( jekyllConfig.share.twitter ) {
-      scriptSrc.push('src/js/twitter.js');
+      scriptSrc.push('<%= project.src.js %>/twitter.js');
     }
 
     if ( jekyllConfig.share.facebook ) {
-      scriptSrc.push('src/js/facebook.js');
+      scriptSrc.push('<%= project.src.js %>/facebook.js');
     }
 
     if ( jekyllConfig.share.google_plus ) {
-      scriptSrc.push('src/js/google-plus.js');
+      scriptSrc.push('<%= project.src.js %>/google-plus.js');
     }
 
     if ( jekyllConfig.share.disqus ) {
-      scriptSrc.push('src/js/disqus.js');
+      scriptSrc.push('<%= project.src.js %>/disqus.js');
     }
 
-    scriptSrc.push('src/js/module.suffix');
+    scriptSrc.push('<%= project.src.js %>/module.suffix');
 
     // explicitly put the linkedIn code out of the immediate function to work
     if ( jekyllConfig.share.linkedin ) {
-      scriptSrc.push('src/js/linkedin.js');
+      scriptSrc.push('<%= project.src.js %>/linkedin.js');
     }
 
     // set source
