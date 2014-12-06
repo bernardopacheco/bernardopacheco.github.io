@@ -7873,7 +7873,8 @@ h4 {
 a {
   color: #f50057;
 }
-a:hover {
+a:hover,
+a:focus {
   color: #f50057;
 }
 .card {
