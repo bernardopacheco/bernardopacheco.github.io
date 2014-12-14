@@ -49,7 +49,7 @@ module.exports = function( grunt ) {
         cwd: 'bower_components/font-awesome'
       },
       images: {
-        src: 'images/*',
+        src: 'images/**/*',
         dest: 'assets',
         expand: true,
         cwd: 'src'
@@ -85,7 +85,7 @@ module.exports = function( grunt ) {
     uncss: {
       dist: {
         options: {
-          ignore: [ 'pre', 'code', 'pre code', /\.highlight(\s\.\w{1,3}(\s\.\w)?)?/ ],
+          ignore: [ 'pre', 'code', 'pre code', /\.highlight(\s\.\w{1,3}(\s\.\w)?)?/, '.img-responsive' ],
           media: [ '(min-width: 768px)', '(min-width: 992px)', '(min-width: 1200px)' ],
           stylesheets: [ '<%= project.assets.css %>' ],
           ignoreSheets: [ /fonts.googleapis/ ],
