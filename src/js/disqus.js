@@ -53,6 +53,7 @@
       aTag.innerText = threadTitle;
       spanTag = document.createElement('span');
       spanTag.innerText = authorName + ' on ';
+      spanTag.className = 'disqus-author';
 
       liTag = document.createElement('li');
       liTag.appendChild( spanTag );
