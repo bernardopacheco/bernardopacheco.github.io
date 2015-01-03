@@ -105,8 +105,8 @@ stylesheet code.
 One last comment: You may have noticed a pattern in the name of the generated 
 files. To prevent the browser using an old version of a cached file 
 while there is a newer version of the same file, the name of the stylesheet and 
-script files is generated in the form `<github-username>-<blog-version>.[css,
-js]`, for example, `bernardopacheco-1.0.0.css` and `bernardopacheco-1.0.0.js`.
+script files is generated in the form `<github-username>-<blog-version>.[css,js]`,
+for example, `bernardopacheco-1.0.0.css` and `bernardopacheco-1.0.0.js`.
 
 #### Start your own blog!
 
