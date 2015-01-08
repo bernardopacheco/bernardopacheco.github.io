@@ -7907,9 +7907,6 @@ a:focus {
   padding: 22px 14px 22px 14px;
   margin-bottom: 14px;
 }
-aside section h3 {
-  margin-top: 0;
-}
 aside section ul {
   padding-left: 18px;
   margin-bottom: 0;
@@ -7930,9 +7927,6 @@ aside section ul li a {
 aside #recent-comments-section {
   display: none;
 }
-aside #recent-comments-section h3 {
-  margin-top: 20px;
-}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #page-wrap {
@@ -7942,7 +7936,6 @@ aside #recent-comments-section h3 {
   #page-content {
     margin: 0 auto;
     max-width: 880px;
-    padding-top: 20px;
   }
   #page-content #content {
     float: left;
@@ -8229,9 +8222,6 @@ aside #recent-comments-section h3 {
   max-width: 100%;
   height: auto;
 }
-.post .post-title {
-  margin-top: 0px;
-}
 .post .post-title a {
   color: #212121;
   text-decoration: none;
@@ -8251,31 +8241,6 @@ aside #recent-comments-section h3 {
   font-size: 0.8em;
   font-weight: 500;
   text-transform: uppercase;
-}
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .post .post-date {
-    text-align: center;
-  }
-  .post .post-date .post-day {
-    display: block;
-  }
-  .post .post-date .post-month-year {
-    display: block;
-  }
-}
-/* Small devices (tablets, smartphones, until 768px) */
-@media (max-width: 991px) {
-  .post-title {
-    margin-top: 0;
-  }
-}
-.page {
-  background-color: #ffffff;
-  border: 1px solid #bdbdbd;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-  padding: 22px 14px 22px 14px;
-  margin-bottom: 14px;
 }
 .post-share {
   background-color: #f5f5f5;

@@ -14,7 +14,7 @@ url: http://bernardopacheco.net
 version: 1.0.0
 
 # number of posts per page
-paginate: 1
+paginate: 10
 
 # your github username
 github_username: bernardopacheco

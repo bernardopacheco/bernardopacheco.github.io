@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
+# About
 
 My name is Bernardo Pacheco. I'm a software engineer living and working in Rio de Janeiro, Brazil.
 
@@ -14,7 +15,7 @@ I have a great interest in cryptography. It is a fascinating area with a beautif
 
 I like to share what I know. I appreciate who does the same.
 
-#### Contact
+## Contact
 
 If you want to get in touch with me you can email me on ![](/assets/images/email.png) or find me on [GitHub][2], [Twitter][3] or [Google+][4].
 
