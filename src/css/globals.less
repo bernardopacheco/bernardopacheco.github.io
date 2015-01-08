@@ -1,5 +1,5 @@
 body {
-  background-color: @dividers;
+  background-color: @white;
 }
 
 // Text selection background color
@@ -18,7 +18,8 @@ body {
 // Paragraph
 
 p {
-  line-height: ( 24px / @font-size-base ) * 1em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
 }
 
 // Code block
@@ -56,8 +57,20 @@ code {
 
 // Headings
 
-h1, h2, h4 {
+h1, h2, h3 {
   font-weight: 400;
+}
+
+h1 {
+    font-size: ( 42px / @font-size-base ) * 1em;
+}
+
+h2 {
+    font-size: ( 34px / @font-size-base ) * 1em;
+}
+
+h3 {
+    font-size: ( 20px / @font-size-base ) * 1em;
 }
 
 // Link

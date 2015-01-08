@@ -10,7 +10,7 @@ I decided (finally) to create my blog. I decided not to use a ready blog, but to
 build one from scratch to learn something. This post talks about this experience 
 and this blog where you are is the result.
 
-#### Hosting from GitHub
+## Hosting from GitHub
 
 To start the project, I needed some place to host my blog. I wondered the idea of reting an instance on [Amazon EC2][1]. There is nothing wrong with EC2, but when I met [GitHub Pages][2] I realized it was the ideal solution for my case. It is an easy hosting solution for websites with HTML, CSS, and JavaScript files. GitHub Pages offers free hosting for a site per GitHub account and organization, and unlimited project sites. On a daily basis there is no bureaucracy: just edit, commit and push your changes to update the site's content. If the repository is public (my case), anyone in the community can contribute by submitting a pull request to improve the content of a post.
 
@@ -24,7 +24,7 @@ More information:
 - [About custom domains for GitHub Pages sites][6];
 - [Adding a CNAME file to your repository][5].
 
-#### Blogging with Jekyll
+## Blogging with Jekyll
 
 Beyond the support of regular HTML content, the real power behind GitHub Pages is [Jekyll][7], a simple, blog-aware static site generator. There is no database, just [Markdown][8] (or [Textile][9]) [Liquid][10], HTML and CSS. Jekyll takes all your content, renders Markdown and Liquid templates, and generates a complete, static website ready to be served.
 
@@ -42,15 +42,15 @@ The main strengths of Jekyll are:
 
 Jekyll is a really fantastic tool that together with GitHub Pages made the development of this blog less painful and more fun.
 
-#### Makeup with Material Design
+## Makeup with Material Design
 
 [Material Design][16] is a design language developed by Google that uses grid-based layouts, responsive animations and transitions, padding, and depth effects such as lighting and shadows. It's an evolving spec which has [continuous releases][17]. I used this design language to build the blog layout. So, did I use **every** aspect of the specification? No way. The material design covers various topics, some make sense for my blog, others not.
 
-**Typography**
+### Typography
 
 The [typographic section][20] recomends the standard typeface [Roboto][18]. It is a beautiful font that has been refined to work across the wider set of platforms. To not let the blog layout a mess, the styles was based on a typographic scale of 12, 14, 16, 20 and 34 px. Furthermore, I considered this advice on readability and line length from the [Baymard Institute][21]: *"You should have around 60 characters per line if you want a good reading experience. Having the right amount of characters on each line is key to the readability of your text."*.
 
-**Text colors and palette**
+### Text colors and palette
 
 The material design has an [entire section][19] to inspire you about colors. One interesting tip was the different shades for text, icons and dividers to make a hierarchy of information. The image below presents the color scale adopted:
 
@@ -65,7 +65,7 @@ and text selection colors:
 
 Not all colors are used, only the primary 500, accent 200 and accent 400.
 
-#### GitHub and Disqus API integration
+## GitHub and Disqus API integration
 
 In the lower left corner of this blog, there are two informations about this
 repository on GitHub: stars counter, a way that people bookmark your project,
@@ -85,7 +85,7 @@ post's list of comments, I called `https://disqus.com/api/3.0/forums/listPosts.j
 being `api_key` my public API key value on Disqus and a `callback` to get the
 response of the JSONP request.
 
-#### Being smarter with Grunt
+## Being smarter with Grunt
 
 The [Grunt Task Runner][27] help me to automate the repetitive tasks like minification, concatenation, compilation and linting of the source code while building the project. You can check all the tasks and it's settings in the [Gruntfile.js][26] file. In fact, I would like to highlight one particular task and it's results: the [grunt-uncss][28] task. Powered by [PhantomJS][29], the grunt-uncss task removes unused CSS. This blog uses the [Twitter Bootstrap] [30] and the [Font Awesome][31] libraries, but it uses less than 10% of the CSS they provide. As a result, they can end up with inflated stylesheets which can significantly increase page load time and affect performance. Yes, performance matters. As Jakob Nielsen said in his [Website Response Times][32] article, "*[...] people **engage** more with a site when they can move freely and focus on the content instead of on their endless wait.*".
 
@@ -108,7 +108,7 @@ while there is a newer version of the same file, the name of the stylesheet and
 script files is generated in the form `<github-username>-<blog-version>.[css,js]`,
 for example, `bernardopacheco-1.0.0.css` and `bernardopacheco-1.0.0.js`.
 
-#### Start your own blog!
+## Start your own blog!
 
 Anyone is welcome to clone, fork and contribute to this project. If you are 
 interested in making your blog from this project, you have to install the 

@@ -7,39 +7,37 @@
 
     {% include header.html %}
 
-    <div id="page-content" class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-11 col-lg-8">
-          {{ content }}
+    <div id="page-wrap">
+        <div id="page-content">
+            <div id="content">
+                {{ content }}
+            </div>
+            <aside>
+                  <section>
+
+                    <h3>Recent Posts</h3>
+
+                    <ul>
+                    {% for post in site.posts limit:5 %}
+                    <li>
+                      <a href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+                    </ul>
+
+                  </section>
+                  <!-- recent posts -->
+
+                  {% if site.share.disqus %}
+                  <section id="recent-comments-section">
+
+                    <h3>Recent Comments</h3>
+
+                  </section>
+                  <!-- recent comments -->
+                  {% endif %}
+            </aside>
         </div>
-        <aside class="col-sm-4 col-lg-4 visible-sm-block visible-lg-block">
-
-          <section>
-
-            <h4>Recent Posts</h4>
-
-            <ul>
-            {% for post in site.posts limit:5 %}
-            <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-            {% endfor %}
-            </ul>
-
-          </section>
-          <!-- recent posts -->
-
-          {% if site.share.disqus %}
-          <section id="recent-comments-section">
-
-            <h4>Recent Comments</h4>
-
-          </section>
-          <!-- recent comments -->
-          {% endif %}
-
-        </aside>
-      </div>
     </div>
 
     {% if site.share.twitter or site.share.facebook or site.share.google_plus or site.share.linkedin or site.share.disqus %}

@@ -1,20 +1,14 @@
 aside {
 
-  margin-top: 78px;
-  .card;
-
   section {
 
-    font-size: ( 14px / @font-size-base ) * 1em;
-
-    h4 {
+    h3 {
       margin-top: 0;
     }
 
     ul {
 
       padding-left: 18px;
-      font-size: @font-size-base;
       margin-bottom: 0;
 
       li {
@@ -28,11 +22,11 @@ aside {
         span.disqus-author {
 
           color: @secondary-text;
-          font-size: ( 14px / @font-size-base ) * 1em;
+          font-size: ( 16px / @font-size-base ) * 1em;
         }
 
         a {
-          font-size: ( 14px / @font-size-base ) * 1em;
+          font-size: ( 16px / @font-size-base ) * 1em;
         }
       }
     }
@@ -42,7 +36,7 @@ aside {
 
     display: none;
 
-    h4 {
+    h3 {
       margin-top: 20px;
     }
   }
@@ -52,7 +46,25 @@ aside {
 
 @media ( min-width: @screen-md-min ) {
 
+  #page-wrap {
+    padding-left: @header-size;
+    width: 100%;
+  }
+
   #page-content {
-    margin: 0 0 0 @header-size;
+      margin: 0 auto;
+      max-width: 880px;
+      padding-top: 20px;
+
+      #content {
+          float: left;
+          max-width: 580px;
+      }
+
+      aside {
+          float: left;
+          max-width: 300px;
+          padding-left: 25px;
+      }
   }
 }
