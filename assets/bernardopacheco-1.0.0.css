@@ -8273,8 +8273,6 @@ aside #recent-comments-section {
 }
 /* Extra small devices (phones) */
 #site-header {
-  background-color: #3f51b5;
-  border-right: 1px solid #303f9f;
   height: 100%;
   position: static;
   width: 100%;
@@ -8283,6 +8281,7 @@ aside #recent-comments-section {
 #site-header #avatar-container {
   min-height: 215px;
   padding: 22px;
+  background-color: #303f9f;
 }
 #site-header #avatar-container #author-picture {
   width: 100px;
@@ -8294,7 +8293,7 @@ aside #recent-comments-section {
   margin-top: 10px;
 }
 #site-header #avatar-container nav {
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
 #site-header #avatar-container nav a {
   color: #ffffff;
@@ -8309,9 +8308,8 @@ aside #recent-comments-section {
     top: 0px;
     width: 250px;
     color: #ffffff;
-  }
-  #site-header #avatar-container {
-    background-color: #303f9f;
+    background-color: #3f51b5;
+    border-right: 1px solid #303f9f;
   }
   #site-header #author-intro {
     font-size: 0.6em;

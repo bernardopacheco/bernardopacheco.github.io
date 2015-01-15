@@ -2,8 +2,6 @@
 
 #site-header {
 
-  background-color: @primary-500;
-  border-right: 1px solid @primary-700;
   height: 100%;
   position: static;
   width: 100%;
@@ -13,6 +11,7 @@
 
     min-height: 215px;
     padding: 22px;
+    background-color: @primary-700;
 
     #author-picture {
 
@@ -29,7 +28,7 @@
 
     nav {
 
-      font-size: ( 12px / @font-size-base ) * 1em;
+      font-size: ( 14px / @font-size-base ) * 1em;
 
       a {
 
@@ -52,10 +51,8 @@
     top: 0px;
     width: @header-size;
     color: @white;
-
-    #avatar-container {
-      background-color: @primary-700;
-    }
+    background-color: @primary-500;
+    border-right: 1px solid @primary-700;
 
     #author-intro {
       font-size: ( 12px / @font-size-base ) * 1em;
