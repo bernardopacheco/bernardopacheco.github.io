@@ -2,26 +2,25 @@
 
 #site-header {
 
-  background-color: @white;
-  border-right: 1px solid @hint-text;
+  background-color: @primary-500;
+  border-right: 1px solid @primary-700;
   height: 100%;
   position: static;
   width: 100%;
+  text-align: center;
 
   #avatar-container {
 
-    background-color: @primary-500;
     min-height: 215px;
     padding: 22px;
-    text-align: center;
 
-    img {
+    #author-picture {
 
       width: 100px;
       border-radius: 50px;
     }
 
-    #name {
+    #author-name {
 
       color: @white;
       font-size: ( 20px / @font-size-base ) * 1em;
@@ -52,55 +51,38 @@
     position: fixed;
     top: 0px;
     width: @header-size;
+    color: @white;
 
     #avatar-container {
+      background-color: @primary-700;
+    }
 
-      text-align: left;
-
-      #intro {
-
-        color: @white;
-        font-size: ( 12px / @font-size-base ) * 1em;
-      }
+    #author-intro {
+      font-size: ( 12px / @font-size-base ) * 1em;
     }
 
     #nav-container {
 
       padding: 24px 0;
-      text-align: left;
 
       nav {
 
         li {
 
           line-height: 40px;
-          padding-left: 22px;
           height: 40px;
 
           a {
 
-            color: @text-color;
+            color: @white;
             display: inline-block;
-            font-weight: bold;
             text-decoration: none;
             width: 100%;
-
-            i {
-
-              color: @text-color;
-              font-size: ( 20px / @font-size-base ) * 1em;
-              vertical-align: middle;
-            }
-
-            span {
-
-              font-size: ( 12px / @font-size-base ) * 1em;
-              margin-left: 24px;
-            }
+            font-size: ( 16px / @font-size-base ) * 1em;
           }
 
           &:hover {
-            background-color: @light-dividers;
+            background-color: @primary-700;
           }
         }
       }
@@ -109,19 +91,18 @@
     footer {
 
       bottom: 0;
-      border-top: 1px solid @dividers;
       font-size: ( 12px / @font-size-base ) * 1em;
       padding: 22px 22px 22px 28px;
       position: absolute;
       width: 100%;
 
       a {
-        color: @text-color;
+        color: @white;
         text-decoration: none;
       }
 
       .fa-heart {
-        color: @accent-400;
+        color: @accent-200;
       }
 
       ul {

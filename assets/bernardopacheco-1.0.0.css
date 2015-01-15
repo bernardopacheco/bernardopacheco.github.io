@@ -8273,23 +8273,22 @@ aside #recent-comments-section {
 }
 /* Extra small devices (phones) */
 #site-header {
-  background-color: #ffffff;
-  border-right: 1px solid #bdbdbd;
+  background-color: #3f51b5;
+  border-right: 1px solid #303f9f;
   height: 100%;
   position: static;
   width: 100%;
-}
-#site-header #avatar-container {
-  background-color: #3f51b5;
-  min-height: 215px;
-  padding: 22px;
   text-align: center;
 }
-#site-header #avatar-container img {
+#site-header #avatar-container {
+  min-height: 215px;
+  padding: 22px;
+}
+#site-header #avatar-container #author-picture {
   width: 100px;
   border-radius: 50px;
 }
-#site-header #avatar-container #name {
+#site-header #avatar-container #author-name {
   color: #ffffff;
   font-size: 1em;
   margin-top: 10px;
@@ -8309,56 +8308,44 @@ aside #recent-comments-section {
     position: fixed;
     top: 0px;
     width: 250px;
+    color: #ffffff;
   }
   #site-header #avatar-container {
-    text-align: left;
+    background-color: #303f9f;
   }
-  #site-header #avatar-container #intro {
-    color: #ffffff;
+  #site-header #author-intro {
     font-size: 0.6em;
   }
   #site-header #nav-container {
     padding: 24px 0;
-    text-align: left;
   }
   #site-header #nav-container nav li {
     line-height: 40px;
-    padding-left: 22px;
     height: 40px;
   }
   #site-header #nav-container nav li a {
-    color: #212121;
+    color: #ffffff;
     display: inline-block;
-    font-weight: bold;
     text-decoration: none;
     width: 100%;
-  }
-  #site-header #nav-container nav li a i {
-    color: #212121;
-    font-size: 1em;
-    vertical-align: middle;
-  }
-  #site-header #nav-container nav li a span {
-    font-size: 0.6em;
-    margin-left: 24px;
+    font-size: 0.8em;
   }
   #site-header #nav-container nav li:hover {
-    background-color: #f5f5f5;
+    background-color: #303f9f;
   }
   #site-header footer {
     bottom: 0;
-    border-top: 1px solid #e0e0e0;
     font-size: 0.6em;
     padding: 22px 22px 22px 28px;
     position: absolute;
     width: 100%;
   }
   #site-header footer a {
-    color: #212121;
+    color: #ffffff;
     text-decoration: none;
   }
   #site-header footer .fa-heart {
-    color: #f50057;
+    color: #ff4081;
   }
   #site-header footer ul {
     display: none;
