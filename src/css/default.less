@@ -33,8 +33,23 @@ aside {
   }
 }
 
-/* Medium devices (desktops, 992px and up) */
+#page-content {
+    #content {
+      margin: 0 auto;
+      max-width: 610px;
+      padding: 0 15px;
+    }
+}
 
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: @screen-xs-max) {
+  body {
+   font-size: 16px;
+  }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
 @media ( min-width: @screen-md-min ) {
 
   #page-wrap {
@@ -44,17 +59,16 @@ aside {
 
   #page-content {
       margin: 0 auto;
-      max-width: 880px;
+      max-width: 940px;
 
       #content {
-          float: left;
-          max-width: 580px;
+        float: left;
       }
 
       aside {
-          float: left;
-          max-width: 300px;
-          padding-left: 25px;
+        float: left;
+        max-width: 300px;
+        padding-left: 25px;
       }
   }
 }

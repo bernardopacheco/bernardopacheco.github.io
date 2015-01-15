@@ -7927,6 +7927,17 @@ aside section ul li a {
 aside #recent-comments-section {
   display: none;
 }
+#page-content #content {
+  margin: 0 auto;
+  max-width: 610px;
+  padding: 0 15px;
+}
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #page-wrap {
@@ -7935,11 +7946,10 @@ aside #recent-comments-section {
   }
   #page-content {
     margin: 0 auto;
-    max-width: 880px;
+    max-width: 940px;
   }
   #page-content #content {
     float: left;
-    max-width: 580px;
   }
   #page-content aside {
     float: left;
@@ -8289,11 +8299,11 @@ aside #recent-comments-section {
 }
 #site-header #avatar-container #author-name {
   color: #ffffff;
-  font-size: 1em;
+  font-size: 20px;
   margin-top: 10px;
 }
 #site-header #avatar-container nav {
-  font-size: 0.7em;
+  font-size: 14px;
 }
 #site-header #avatar-container nav a {
   color: #ffffff;
