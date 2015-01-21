@@ -20,7 +20,7 @@ layout: default
         </li>
         <li>
           {% if site.share.disqus %}
-          <a href="#disqus_thread">0 Comments</a>
+          <a href="{{ site.url }}{{ page.url }}/#disqus_thread" data-disqus-identifier="{{ page.path }}">article</a>
           {% endif %}
         </li>
         <li>
