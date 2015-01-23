@@ -6,7 +6,7 @@ permalink: /how-i-made-my-blog-with-github-jekyll-and-material-design
 Every day we learn new technologies, we know more about what we thought we knew 
 everything and we solve problems. But most of the time, this knowledge is not 
 passed forward, sometimes it only arrives to our coworkers. Thinking about it, 
-I decided (finally) to create my blog. I decided not to use a ready blog, but to 
+I decided (finally) to create my blog. I decided not to use a out of the box blog, but to 
 build one from scratch to learn something. This post talks about this experience 
 and this blog where you are is the result.
 
@@ -48,7 +48,7 @@ Jekyll is a really fantastic tool that together with GitHub Pages made the devel
 
 ### Typography
 
-The [typographic section][20] recomends the standard typeface [Roboto][18]. It is a beautiful font that has been refined to work across the wider set of platforms. To not let the blog layout a mess, the styles was based on a typographic scale of 12, 14, 16, 20 and 34 px. Furthermore, I considered this advice on readability and line length from the [Baymard Institute][21]: *"You should have around 60 characters per line if you want a good reading experience. Having the right amount of characters on each line is key to the readability of your text."*.
+The [typographic section][20] recomends the standard typeface [Roboto][18]. It is a beautiful font that has been refined to work across the wider set of platforms. To avoid a messy layout, the styles was based on a typographic scale of 12, 14, 16, 20, 34, and 42 px. Furthermore, I considered this advice on readability and line length from the [Baymard Institute][21]: *"You should have around 60 characters per line if you want a good reading experience. Having the right amount of characters on each line is key to the readability of your text."*.
 
 ### Text colors and palette
 
@@ -63,7 +63,7 @@ and text selection colors:
 
 ![Secondary color palette](/assets/images/posts/2015-01-03-how-i-made-my-blog-with-github-jekyll-and-material-design/secondary-color-palette.jpg "Secondary color palette")
 
-Not all colors are used, only the primary 500, accent 200 and accent 400.
+Not all colors were used, only the primary 500, primary 700, accent 200 and accent 400 were sufficient to compose the final color palette.
 
 ## GitHub and Disqus API integration
 
