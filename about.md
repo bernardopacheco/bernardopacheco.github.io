@@ -7,9 +7,9 @@ permalink: /about/
 
 My name is Bernardo Pacheco. I'm a software engineer living and working in Rio de Janeiro, Brazil.
 
-I’ve gone to [Federal University of Rio de Janeiro (UFRJ)][1] for a bachelor's degree and a master's degree in Computer Science.
+I’ve attended the [Federal University of Rio de Janeiro (UFRJ)][1] for a bachelor's degree and a master's degree in Computer Science.
 
-I’ve worked on different things already, but currently I am involved with the full-stack JavaScript developing web and mobile applications with technologies including HTML5, CSS, JavaScript, AngularJS, NodeJS and MongoDB.
+Currently I am involved with the full-stack JavaScript developing web and mobile applications with technologies including HTML5, CSS, JavaScript, AngularJS, NodeJS and MongoDB. I’ve worked on different things already and I have experience in the .NET framework, C#, Entity Framework, ASP .NET MVC, SQL Server, Git and Mercurial. I use fish as my command line shell and my preferred editor is vim. 
 
 I have a great interest in cryptography. It is a fascinating area with a beautiful mathematics and with a history of amazing people.
 
