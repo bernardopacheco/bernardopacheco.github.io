@@ -5,7 +5,7 @@ permalink: /about/
 ---
 # About
 
-My name is Bernardo Pacheco. I'm a software engineer living and working in Rio de Janeiro, Brazil.
+My name is Bernardo Pacheco. I'm a software engineer living and working at [Dot Legend][5] in Rio de Janeiro, Brazil.
 
 I’ve attended the [Federal University of Rio de Janeiro (UFRJ)][1] for a bachelor's degree and a master's degree in Computer Science.
 
@@ -23,3 +23,4 @@ If you want to get in touch with me you can email me on ![](/assets/images/email
 [2]: http://github.com/bernardopacheco
 [3]: http://twitter.com/BernardoPachec0
 [4]: https://plus.google.com/+BernardoPacheco0/posts
+[5]: http://www.dotlegend.net/
