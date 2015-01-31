@@ -5,10 +5,13 @@ author:
   picture: /assets/images/avatar.jpg
 
 # site description
-description: site description
+description: Thoughts and writings about software engineering by Bernardo Pacheco.
 
 # site url
 url: http://bernardopacheco.net
+
+# site title
+title: Bernardo Pacheco
 
 # site version
 version: 1.0.0

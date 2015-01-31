@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How I made my blog with GitHub, Jekyll and Material Design"
+description: Using GitHub, Jekyll and Material Design, I decided to create my own blog from scratch to learn something. This blog is the result.
 permalink: /how-i-made-my-blog-with-github-jekyll-and-material-design
 ---
 Every day we learn new technologies, we know more about what we thought we knew 
