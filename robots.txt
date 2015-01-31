@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://bernardopacheco.net/sitemap.xml
+Disallow:
