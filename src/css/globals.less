@@ -1,5 +1,5 @@
 body {
-  background-color: @white;
+  background-color: @lighter-dividers;
 }
 
 // Text selection background color
@@ -18,8 +18,8 @@ body {
 // Paragraph
 
 p {
-  line-height: 1.5em;
-  margin-bottom: 1em;
+  line-height: ( 32px / @font-size-base ) * 1em;
+  margin-top: ( 30px / @font-size-base ) * 1em;
 }
 
 // Code block
@@ -56,6 +56,13 @@ code {
   word-wrap: break-word;
 }
 
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: @screen-xs-max) {
+  pre {
+    font-size: 16px;
+  }
+}
+
 // Headings
 
 h1, h2, h3 {
@@ -68,6 +75,7 @@ h1 {
 
 h2 {
     font-size: ( 34px / @font-size-base ) * 1em;
+    margin-top: ( 34px / @font-size-base ) * 1em;
 }
 
 h3 {

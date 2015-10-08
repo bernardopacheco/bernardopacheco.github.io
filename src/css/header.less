@@ -6,6 +6,7 @@
   position: static;
   width: 100%;
   text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,0.14);
 
   #avatar-container {
 
@@ -21,9 +22,12 @@
 
     #author-name {
 
-      color: @white;
-      font-size: 20px;
+      color: @secondary-text;
+      font-size: 24px;
       margin-top: 10px;
+      margin-bottom: 20px;
+      font-family: Oswald;
+      font-weight: 300;
     }
 
     nav {
@@ -32,7 +36,7 @@
 
       a {
 
-        color: @white;
+        color: @text-color;
         text-decoration: none;
       }
     }
@@ -50,12 +54,13 @@
     position: fixed;
     top: 0px;
     width: @header-size;
-    color: @white;
+    color: @secondary-text;
     background-color: @primary-500;
-    border-right: 1px solid @primary-700;
+    border-right: 1px solid rgba(0,0,0,0.14);
 
     #author-intro {
       font-size: ( 12px / @font-size-base ) * 1em;
+      margin-bottom: 12px;
     }
 
     #nav-container {
@@ -71,7 +76,7 @@
 
           a {
 
-            color: @white;
+            color: @text-color;
             display: inline-block;
             text-decoration: none;
             width: 100%;
@@ -79,7 +84,7 @@
           }
 
           &:hover {
-            background-color: @primary-700;
+            background-color: @light-dividers;
           }
         }
       }
@@ -89,12 +94,13 @@
 
       bottom: 0;
       font-size: ( 12px / @font-size-base ) * 1em;
-      padding: 22px 22px 22px 28px;
+      padding: 28px 22px 22px 22px;
       position: absolute;
       width: 100%;
+      border-top: 1px solid rgba(0,0,0,0.14);
 
       a {
-        color: @white;
+        color: @text-color;
         text-decoration: none;
       }
 
