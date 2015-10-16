@@ -33,14 +33,9 @@ layout: default
         <!-- meta -->
 
         <section class="post-content">
-          {{ post.excerpt | remove: '.</p>' | append: '...</p>' }}          
+          {{ post.excerpt | remove: '.</p>' | append: '...</p>' }}
         </section>
         <!-- content -->
-
-        {% if site.share.twitter or site.share.facebook or site.share.google_plus or site.share.linkedin %}
-          {% include share.html %}
-        {% endif %}
-        <!-- share -->
 
         <div class="post-reading-link">
           <a href="{{ post.url }}">Continue reading&nbsp;<i class="fa fa-angle-double-right"></i></a>

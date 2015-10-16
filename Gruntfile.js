@@ -85,7 +85,7 @@ module.exports = function( grunt ) {
     uncss: {
       dist: {
         options: {
-          ignore: [ 'pre', 'code', 'pre code', /\.highlight(\s\.\w{1,3}(\s\.\w)?)?/, '.post img', '.post .post-footer', '.post h4', 'aside section ul li span.disqus-author' ],
+          ignore: [ 'pre', 'code', 'pre code', /\.highlight(\s\.\w{1,3}(\s\.\w)?)?/, '.post img', '.post .post-footer', '.post h4', 'aside section ul li span.disqus-author', '.post-share .share-title', '.post-share .share-social-medias', '.post-share .share-social-medias .twitter-social-media', '.post-share .share-social-medias .facebook-social-media', '.post-share .share-social-medias .google-plus-social-media', '.post-share .share-social-medias .linkedin-social-media' ],
           media: [ '(min-width: 768px)', '(min-width: 992px)', '(min-width: 1200px)' ],
           stylesheets: [ '<%= project.assets.css %>' ],
           ignoreSheets: [ /fonts.googleapis/ ],
