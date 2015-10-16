@@ -7,6 +7,8 @@ permalink: /a-simple-javascript-library-design
 
 When building a JavaScript library, you may find yourself on some code architecture issues. Should I use a constructor function, maybe with a prototype inheritance, isolating in a module or a mix of all of this? A library should have a well-defined public interface and protect itself from a carelessly programmer. In this post, I'm going to build a super simple library to illustrate some code designs.
 
+<!--excerpt_separator-->
+
 The library has one purpose: to create `Person` objects. A `Person` object has a `name`, which is assigned in the person constructor and cannot be changed after the person was created. A `Person` object also have a `me` function that describes the person himself.
 
 Some approaches are presented below as well as their pros and cons.
@@ -210,4 +212,3 @@ return {
 {% endhighlight %}
 
 It will not work because the `this` in the `me` function references a anonymous object. You must [bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) the `me` function to right object in the return statement.
-

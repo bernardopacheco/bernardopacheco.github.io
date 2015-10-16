@@ -1,15 +1,19 @@
 ---
 layout: post
-title:  "How I made my blog with GitHub, Jekyll and Material Design"
+title:  "How I Made My Blog with Github, Jekyll and Material Design"
 description: Using GitHub, Jekyll and Material Design, I decided to create my own blog from scratch to learn something. This blog is the result.
 permalink: /how-i-made-my-blog-with-github-jekyll-and-material-design
 ---
-Every day we learn new technologies, we know more about what we thought we knew 
-everything and we solve problems. But most of the time, this knowledge is not 
-passed forward, sometimes it only arrives to our coworkers. Thinking about it, 
-I decided (finally) to create my blog. I decided not to use a out of the box blog, but to 
-build one from scratch to learn something. This post talks about this experience 
+![How I made my blog with Github, Jekyll and Material Design cover image](/assets/images/posts/2015-01-03-how-i-made-my-blog-with-github-jekyll-and-material-design/github_jekyll_materialdesign.jpg)
+
+Every day we learn new technologies, we know more about what we thought we knew
+everything and we solve problems. But most of the time, this knowledge is not
+passed forward, sometimes it only arrives to our coworkers. Thinking about it,
+I decided (finally) to create my blog. I decided not to use a out of the box blog, but to
+build one from scratch to learn something. This post talks about this experience
 and this blog where you are is the result.
+
+<!--excerpt_separator-->
 
 ## Hosting from GitHub
 
@@ -76,9 +80,9 @@ representation of the repository through the [GitHub API][22], I just called
 `stargazers_count` and `forks` properties. Because I was using JSONP,
 a `callback` property must be passed in the query string.
 
-Another API integration was made with [Disqus][23]. Disqus is a networked 
+Another API integration was made with [Disqus][23]. Disqus is a networked
 community platform that provides a feature-rich comment system to leverage the
-community discussion about some post. This blog utilizes three pieces: 
+community discussion about some post. This blog utilizes three pieces:
 comment system widget, comments count and recent comments widget. The first two
 were installed with a drop-in [code snippet][24]. The last one, recent comments
 widget, was a custom component built with the [Disqus API][25]. To fetch a
@@ -95,7 +99,7 @@ Grunt's tasks:
 
 [![Removing unused CSS with UnCSS](/assets/images/posts/2015-01-03-how-i-made-my-blog-with-github-jekyll-and-material-design/uncss.jpg "Removing unused CSS with UnCSS")](/assets/images/posts/2015-01-03-how-i-made-my-blog-with-github-jekyll-and-material-design/uncss.jpg)
 
-The first task `less:build` concatenates and compiles all the less source code 
+The first task `less:build` concatenates and compiles all the less source code
 and generates a single stylesheet file with 167.88 kB in size. The next task
 `uncss:dist` removes all the unused CSS reducing the file size of 167.88 kB to
 17 kB, that is, 90% of the stylesheet was removed. The last task `less:dist`
@@ -103,16 +107,16 @@ minifies the cleaned stylesheet reducing the file size of 17 kB to 11.84 kB.
 Thus, reducing of 167.88 kB to 11.84 kB, this shows that only 7% was a useful
 stylesheet code.
 
-One last comment: You may have noticed a pattern in the name of the generated 
-files. To prevent the browser using an old version of a cached file 
-while there is a newer version of the same file, the name of the stylesheet and 
+One last comment: You may have noticed a pattern in the name of the generated
+files. To prevent the browser using an old version of a cached file
+while there is a newer version of the same file, the name of the stylesheet and
 script files is generated in the form `<github-username>-<blog-version>.[css,js]`,
 for example, `bernardopacheco-1.0.0.css` and `bernardopacheco-1.0.0.js`.
 
 ## Start your own blog!
 
-Anyone is welcome to clone, fork and contribute to this project. If you are 
-interested in making your blog from this project, you have to install the 
+Anyone is welcome to clone, fork and contribute to this project. If you are
+interested in making your blog from this project, you have to install the
 following dependencies:
 
 - [Git][33];
@@ -141,10 +145,10 @@ To customize the blog with your informations, you need to change two files:
 [![Blog configuration](/assets/images/posts/2015-01-03-how-i-made-my-blog-with-github-jekyll-and-material-design/config.jpg "Blog configuration")](/assets/images/posts/2015-01-03-how-i-made-my-blog-with-github-jekyll-and-material-design/config.jpg)
 
 The properties are self-explanatory. With these informations, all the site
-structure are generated, including file names, share options, number of posts 
-per page, GitHub links, repository status and Disqus widgets. For instance, 
-in the `share` section, if you don't want a Facebook share button, just set 
-the `facebook` property to `false` and the Grunt automation process will be 
+structure are generated, including file names, share options, number of posts
+per page, GitHub links, repository status and Disqus widgets. For instance,
+in the `share` section, if you don't want a Facebook share button, just set
+the `facebook` property to `false` and the Grunt automation process will be
 responsible for removing the Facebook share script of the final generated script
 file. Nice!
 
@@ -154,7 +158,7 @@ This is the content of the `src/css/variables.less` file:
 
 If you want to alter the typography, you can change the font size and font
 family. You can also change the primary and secondary color palettes, as well as
-the text colors hierarchy. If you wish to increase or decrease the width of the 
+the text colors hierarchy. If you wish to increase or decrease the width of the
 side menu, you can also do it. Now, if you want to make other changes that are not
 possible via configuration files, do this, touch the source code and hack
 something! It will be great to see other creative solutions!
@@ -180,7 +184,7 @@ something! It will be great to see other creative solutions!
 [19]: http://www.google.com.br/design/spec/style/color.html#
 [20]: http://www.google.com.br/design/spec/style/typography.html
 [21]: http://baymard.com/blog/line-length-readability
-[22]: https://developer.github.com/v3/ 
+[22]: https://developer.github.com/v3/
 [23]: https://disqus.com
 [24]: https://disqus.com/admin/universalcode/
 [25]: https://disqus.com/api/docs/
