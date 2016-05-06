@@ -22,7 +22,7 @@
 
     #author-name {
 
-      color: @secondary-text;
+      color: @grey-100;
       font-size: 24px;
       margin-top: 10px;
       margin-bottom: 20px;
@@ -36,8 +36,12 @@
 
       a {
 
-        color: @text-color;
+        color: @grey-550;
         text-decoration: none;
+        
+        &:hover {
+          color: @grey-100;
+        }
       }
     }
   }
@@ -76,15 +80,15 @@
 
           a {
 
-            color: @text-color;
+            color: @grey-550;
             display: inline-block;
             text-decoration: none;
             width: 100%;
             font-size: ( 16px / @font-size-base ) * 1em;
-          }
 
-          &:hover {
-            background-color: @light-dividers;
+            &:hover {
+              color: @grey-100;
+            }
           }
         }
       }
@@ -100,13 +104,15 @@
       border-top: 1px solid rgba(0,0,0,0.14);
 
       a {
-        color: @text-color;
+        color: @grey-550;
         text-decoration: none;
       }
 
       .fa-heart {
         color: @accent-200;
+        transition: all .2s ease-in-out;
       }
+      .fa-heart:hover { transform: scale(1.2); }
 
       ul {
 
