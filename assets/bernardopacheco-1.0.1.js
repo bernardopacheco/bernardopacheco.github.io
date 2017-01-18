@@ -1,5 +1,5 @@
 /*!
- * bernardopacheco - v0.1.0 - 2017-01-17
+ * bernardopacheco - v0.1.1 - 2017-01-17
  * Bernardo Pacheco
  * Source code for Bernardo Pacheco website
  * http://bernardopacheco.net
