@@ -2,7 +2,7 @@
   "name": "bernardopacheco",
   "description": "Source code for Bernardo Pacheco website",
   "author": "Bernardo Pacheco",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "copyright": "2014",
   "url": "http://bernardopacheco.net",
   "repository": {
@@ -15,14 +15,16 @@
     "url": "https://github.com/bernardopacheco/bernardopacheco.github.io/issues"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-concat": "^0.5.0",
-    "grunt-contrib-copy": "^0.7.0",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-less": "^0.11.4",
-    "grunt-contrib-uglify": "^0.6.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-uncss": "^0.3.8"
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "grunt": "1.0.1",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-concat": "1.0.1",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-jshint": "1.1.0",
+    "grunt-contrib-less": "1.4.0",
+    "grunt-contrib-uglify": "2.0.0",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-uncss": "0.6.1"
   }
 }

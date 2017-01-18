@@ -46,7 +46,7 @@ module.exports = function( grunt ) {
         src: 'fonts/*',
         dest: 'assets',
         expand: true,
-        cwd: 'bower_components/font-awesome'
+        cwd: 'node_modules/font-awesome'
       },
       images: {
         src: 'images/**/*',
