@@ -8,7 +8,6 @@ module.exports = function( grunt ) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-uncss');
 
   var config;
 
@@ -79,24 +78,6 @@ module.exports = function( grunt ) {
       }
     },
 
-    /*
-      ignore: do not remove code block highlight sytlesheet
-    */
-    uncss: {
-      dist: {
-        options: {
-          ignore: [ 'pre', 'code', 'pre code', /\.highlight(\s\.\w{1,3}(\s\.\w)?)?/, '.post img', '.post .post-footer', '.post h4', 'aside section ul li span.disqus-author', '.post-share .share-title', '.post-share .share-social-medias', '.post-share .share-social-medias .twitter-social-media', '.post-share .share-social-medias .facebook-social-media', '.post-share .share-social-medias .google-plus-social-media', '.post-share .share-social-medias .linkedin-social-media' ],
-          media: [ '(min-width: 768px)', '(min-width: 992px)', '(min-width: 1200px)' ],
-          stylesheets: [ '<%= project.assets.css %>' ],
-          ignoreSheets: [ /fonts.googleapis/ ],
-          report: 'min'
-        },
-        files: {
-          '<%= project.assets.css %>': [ '_site/index.html', '_site/about/index.html' ]
-        }
-      }
-    },
-
     uglify: {
       options: {
         banner: "<%= meta.banner %>"
@@ -125,7 +106,7 @@ module.exports = function( grunt ) {
   grunt.renameTask( 'watch', 'delta' );
   grunt.registerTask( 'watch', [ 'build', 'delta' ] );
   grunt.registerTask( 'build', [ 'clean', 'jshint', 'copy', 'concatScripts', 'less:build' ] );
-  grunt.registerTask( 'dist', [ 'uncss', 'less:dist', 'uglify' ] );
+  grunt.registerTask( 'dist', [ 'less:dist', 'uglify' ] );
   grunt.registerTask( 'default', [ 'build', 'dist' ] );
 
   grunt.registerTask( 'concatScripts', 'concat scripts based on jekyll configuration file _config.yml', function() {
@@ -156,10 +137,6 @@ module.exports = function( grunt ) {
 
     if ( jekyllConfig.share.facebook ) {
       scriptSrc.push('<%= project.src.js %>/facebook.js');
-    }
-
-    if ( jekyllConfig.share.google_plus ) {
-      scriptSrc.push('<%= project.src.js %>/google-plus.js');
     }
 
     if ( jekyllConfig.share.disqus ) {

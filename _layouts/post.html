@@ -20,7 +20,7 @@ layout: default
         </li>
         <li>
           {% if site.share.disqus %}
-          <a href="{{ site.url }}{{ page.url }}/#disqus_thread" data-disqus-identifier="{{ page.path }}"></a>
+          <a href="{{ site.url }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.path }}"></a>
           {% endif %}
         </li>
         <li>
@@ -35,7 +35,7 @@ layout: default
     </section>
     <!-- content -->
 
-    {% if site.share.twitter or site.share.facebook or site.share.google_plus or site.share.linkedin %}
+    {% if site.share.twitter or site.share.facebook or site.share.linkedin %}
       {% assign isPage = true %}
       {% include share.html %}
     {% endif %}
