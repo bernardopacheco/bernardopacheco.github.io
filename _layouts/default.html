@@ -15,9 +15,9 @@
             <aside class="visible-lg-block">
                   <section>
 
-                    <h3>Recent Posts</h3>
+                    <h3>Recent Articles</h3>
 
-                    <ul class="list-unstyled">
+                    <ul>
                     {% for post in site.posts limit:5 %}
                     <li>
                       <a href="{{ post.url }}">{{ post.title }}</a>

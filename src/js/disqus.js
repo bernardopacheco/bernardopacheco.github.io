@@ -42,8 +42,6 @@
       threadTitle,
       threadLink;
 
-    ulTag.className = 'list-unstyled';
-
     for ( ; i < numOfComments && i < recentCommentsToDisplay; i++ ) {
 
       authorName = data.response[ i ].author.name;

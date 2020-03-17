@@ -13,10 +13,11 @@
     <nav>
 
       <ul id="nav" class="list-inline hidden-md hidden-lg">
-        <li><a href="/">Posts</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="/about" class="{% if page.url == '/about/' %}current{% endif %}">About Me</a></li>
+        <li><a href="/articles" class="{% if page.url == '/articles/' %}current{% endif %}">Articles</a></li>
+        <li><a href="/projects" class="{% if page.url == '/projects/' %}current{% endif %}">Projects</a></li>
         <li><a href="{{ site.url }}/feed.xml" target="_blank">RSS</a></li>
-        <li><a href="//github.com/{{ site.github_username }}" target="_blank">GitHub</a></li>
+        <li><a href="/contact" class="{% if page.url == '/contact/' %}current{% endif %}">Contact</a></li>
       </ul>
 
     </nav>
@@ -30,10 +31,11 @@
     <nav>
 
       <ul class="list-unstyled">
-        <li><a href="/">Posts</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="/about" class="{% if page.url == '/about/' %}current{% endif %}">About Me</a></li>
+        <li><a href="/articles" class="{% if page.url == '/articles/' %}current{% endif %}">Articles</a></li>
+        <li><a href="/projects" class="{% if page.url == '/projects/' %}current{% endif %}">Projects</a></li>
         <li><a href="{{ site.url }}/feed.xml" target="_blank">RSS</a></li>
-        <li><a href="//github.com/{{ site.github_username }}" target="_blank">GitHub</a></li>
+        <li><a href="/contact" class="{% if page.url == '/contact/' %}current{% endif %}">Contact</a></li>
       </ul>
 
     </nav>
