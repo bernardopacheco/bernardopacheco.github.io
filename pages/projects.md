@@ -9,7 +9,7 @@ permalink: /projects/
 
 Pixel Maze is a maze/labyrinth puzzle 2D game about a young boy called Arnold exploring paths in a procedural world to escape and find freedom.
 
-<p>
+<p class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/nyFuooigxPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
