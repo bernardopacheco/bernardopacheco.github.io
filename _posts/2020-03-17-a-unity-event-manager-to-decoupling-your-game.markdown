@@ -5,15 +5,15 @@ description: A Unity event manager that helps to decouple your games.
 permalink: /a-unity-event-manager-to-decoupling-your-game
 ---
 
-An event-driven architecture dramatically helped to structure my Unity game <a href="/projects#pixel-maze">Pixel Maze</a>. Triggering events to communicate between components was the way I used to decouple components and compose more elaborated functionalities.
+A common way to compose a game scene in Unity is attaching one GameObject to another to share methods and properties. This practice causes a highly coupled architecture that is hard to maintain. Unity does provide a Messaging System but it limits the parameter's type that can be sent.
 
 <!--excerpt_separator-->
 
-In this post I share my custom Unity Event Manager code and how to use it.
+In order to overcome these problems, I created a pure C# Event Manager mechanism. An event-driven architecture dramatically helped to structure my Unity game <a href="/projects#pixel-maze">Pixel Maze</a>. Triggering events to communicate among components allowed to decouple components and compose elaborated functionalities.
 
 ## How to Set up
 
-In the first game scene, create an empty Unity Game Object named *EventManager* and **attach** the `EventManager.cs` script to it. This script is set to `DontDestroyOnLoad`, i.e., it won't be destroyed when reloading scene.
+In the first game scene, create an empty Unity GameObject named *EventManager* and **attach** the `EventManager.cs` script to it. This script is set to `DontDestroyOnLoad`, i.e., it won't be destroyed when reloading scene.
 
 <p><strong>EventManager.cs</strong></p>
 <script src="https://gist.github.com/bernardopacheco/2b853161a9d3b8088e5f153b83342d92.js?file=01_EventManager.cs"></script>
