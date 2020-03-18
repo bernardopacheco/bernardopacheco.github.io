@@ -23,6 +23,12 @@ Pixel Maze is a maze/labyrinth puzzle 2D game about a young boy called Arnold ex
   </ul>
 </p>
 
+##### Articles
+
+<ul>
+  <li><a href="{% post_url 2020-03-17-a-unity-event-manager-to-decoupling-your-game %}">A Unity Event Manager to Decoupling Your Game</a></li>
+</ul>
+
 ## bernardopacheco.net (this blog!)
 
 My personal blog. I decided to build my own blog from scratch mainly because I wanted to fully integrate with GitHub, learn Jekyll and apply the best design practices. Another goal was to provide the community with a very easy blog to use and extend.
