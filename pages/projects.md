@@ -21,7 +21,7 @@ Pixel Maze is a maze/labyrinth puzzle 2D game about a young boy called Arnold ex
 
 ### Articles
 
-- <a href="{% post_url 2020-03-16-wang-tiles-here-is-how-to-use %}">Wang Tiles: Here's How to Use</a>
+- <a href="{% post_url 2020-03-16-wang-tiles-here-is-how-to-use %}">Wang Tiles: Here is How to Use</a>
 - <a href="{% post_url 2020-03-17-a-unity-event-manager-to-decoupling-your-game %}">A Unity Event Manager to Decoupling Your Game</a>
 
 ## bernardopacheco.net (this blog!)

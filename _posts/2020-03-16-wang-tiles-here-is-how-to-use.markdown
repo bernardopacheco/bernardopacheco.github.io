@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Wang Tiles: Here's How to Use"
+title:  "Wang Tiles: Here is How to Use"
 description: How I used Wang Tiles to compose Pixel Maze puzzle.
 permalink: /wang-tiles-here-is-how-to-use
 ---
