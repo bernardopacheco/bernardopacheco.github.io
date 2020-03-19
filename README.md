@@ -2,7 +2,7 @@
 
 * Site: [bernardopacheco.net](http://bernardopacheco.net)
 
-If you are interested in making your blog from this project, check out how [I made my blog with GitHub, Jekyll and Material Design](http://bernardopacheco.net/how-i-made-my-blog-with-github-jekyll-and-material-design) post.
+If you are interested in making your blog from this project, check out [How I made my blog with GitHub, Jekyll and Material Design](http://bernardopacheco.net/how-i-made-my-blog-with-github-jekyll-and-material-design) post.
 
 > Please, feel free to learn, read, and use any code from this website. All content despite being hosted openly is subject to copyright of Bernardo Pacheco.
 
@@ -16,24 +16,28 @@ git clone git@github.com:bernardopacheco/bernardopacheco.github.io.git
 
 Install the dependencies:
 
-- [Node.js](http://nodejs.org/)
-- [Grunt](http://gruntjs.com/)
-- [Jekyll](http://jekyllrb.com/)
+- [Docker](https://www.docker.com/)
 
-Run the commands:
+Run the command:
 
 ```
-$ npm install
-$ jekyll build
-$ grunt
-$ jekyll serve
+docker-compose up
 ```
 
-Done. Now you can go in your browser and access the site locally in http://0.0.0.0:4000.
+Done. Now you can open your browser and access the site locally at http://0.0.0.0:4000. Any blog's content change will be automatically reflected in the browser. No need to refresh!
 
 To customize the blog with your own information, just update two files: [_config.yml](https://github.com/bernardopacheco/bernardopacheco.github.io/blob/master/_config.yml) and [src/css/variables.less](https://github.com/bernardopacheco/bernardopacheco.github.io/blob/master/src/css/variables.less).
 
-The properties are self-explanatory. With these informations the site structure is generated, including file names, share options, number of posts per page, GitHub links, repository status, Disqus widgets, font size, font family and the color palette.
+The properties are self-explanatory. With these pieces of information, the site structure is generated, including:
+
+- site's source code (HTML, CSS, JavaScript, images and fonts);
+- social share buttons (Twitter, Facebook and LinkedIn);
+- posts pagination;
+- GitHub links;
+- GitHub repository status (stars and forks);
+- Disqus widget;
+- Disqus latest comments;
+- font size, font family and Material Design color palette.
 
 Enjoy!
 
