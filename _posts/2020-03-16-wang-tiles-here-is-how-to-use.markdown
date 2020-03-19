@@ -5,7 +5,7 @@ description: How I used Wang Tiles to compose Pixel Maze puzzle.
 permalink: /wang-tiles-here-is-how-to-use
 ---
 
-The first <a href="/projects#pixel-maze">Pixel Maze</a> prototypes were basically a grid of lines representing walls of a carved maze. When the testing and experimentation phase was over, it was time to apply an art layer on top of the black and white maze to start looking like a real game. After some research, I discovered the <a href="http://www.cr31.co.uk/stagecast/wang/intro.html" target="_blank">Wang Tiles</a> would be the preferred technique to make it happen.
+The first <a href="/projects#pixel-maze">Pixel Maze</a> prototypes were basically a grid of lines representing walls of a carved maze. When the experimentation phase was over, it was time to apply an art layer on top of the black and white maze to start looking like a real game. After some research, I discovered that <a href="http://www.cr31.co.uk/stagecast/wang/intro.html" target="_blank">Wang Tiles</a> would be the preferred technique to make it happen.
 
 <!--excerpt_separator-->
 
@@ -23,7 +23,7 @@ Below is an array representing a set of Wang tiles of all 16 possible combinatio
 
 | ![Wang Tiles array](/assets/images/posts/2020-03-16-wang-tiles-here-is-how-to-use/wang-tiles-array.png) | 
 |:--:| 
-| *Wang Tiles array* |
+| *Wang Tiles array* - <a href="http://www.cr31.co.uk/stagecast/wang/intro.html" target="_blank">*Image source*</a>|
 
 To get a tile, an unique *index* in the array is calculated using bitwise operation. If there is a wall, add up using the following binary weighting:
 
@@ -36,7 +36,7 @@ For example, if a maze cell only contains a West and East walls, the array index
 
 | ![Wang Tile sprite](/assets/images/posts/2020-03-16-wang-tiles-here-is-how-to-use/wang-tiles-cell.png) | 
 |:--:| 
-| *Wang Tile sprite* |
+| *Wang Tiles sprite* - <a href="http://www.cr31.co.uk/stagecast/wang/intro.html" target="_blank">*Image source*</a>|
 
 Using Wang tiles to compose a maze theme was great because I only had to draw 16 tiles per world. Also, applying the tiles to the carved maze is very performant due to the easy array index access for getting tiles - *time complexity O(1)*.
 

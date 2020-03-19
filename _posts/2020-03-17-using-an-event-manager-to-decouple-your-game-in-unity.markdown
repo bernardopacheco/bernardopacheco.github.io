@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "A Unity Event Manager to Decoupling Your Game"
-description: A Unity event manager that helps to decouple your games.
-permalink: /a-unity-event-manager-to-decoupling-your-game
+title:  "Using an Event Manager to Decouple your Game in Unity"
+description: A Unity event manager that helps to decouple your game in Unity.
+permalink: /using-an-event-manager-to-decouple-your-game-in-unity
 ---
 
 A common way to compose a game scene in Unity is attaching one GameObject to another to share methods and properties. This practice causes a highly coupled architecture that is hard to maintain. Unity does provide a Messaging System but it limits the parameter's type that can be sent. In order to overcome these problems, I created a pure C# **Event Manager** to implement an event-driven architecture in my Unity <a href="/projects#pixel-maze">Pixel Maze</a> game.

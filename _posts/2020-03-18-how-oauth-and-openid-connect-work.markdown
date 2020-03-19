@@ -5,7 +5,7 @@ description: Notes on how OAuth 2.0 and OpenID Connect work.
 permalink: /how-oauth-and-openid-connect-work
 ---
 
-I've been working with OAuth 2.0 and OpenID Connect for the last 4 years configuring different clients and integrating systems. It was challenging to learn and grasp the terminology and jargon. I could <a href="https://github.com/keycloak/keycloak-nodejs-connect/pull/189#issuecomment-484452321" target="_blank">contribute to the open source Keycloak Node.js adapter</a> and gained experience with <a href="https://www.keycloak.org/" target="_blank">Keycloak</a>. 
+I've been working with OAuth 2.0 and OpenID Connect for the last 4 years configuring different clients and integrating systems. It was challenging to learn and grasp the terminology and jargon. I had the chance to <a href="https://github.com/keycloak/keycloak-nodejs-connect/pull/189#issuecomment-484452321" target="_blank">contribute to the open source Keycloak Node.js adapter</a> and gained experience with <a href="https://www.keycloak.org/" target="_blank">Keycloak</a>. 
 Along the way, I took notes about this protocol and decided to write this article for myself to refresh my memory when I need to. I hope it can be valuable to you too.
 
 <!--excerpt_separator-->
