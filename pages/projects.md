@@ -24,6 +24,12 @@ Pixel Maze is a maze/labyrinth puzzle 2D game about a young boy called Arnold ex
 - <a href="{% post_url 2020-03-16-wang-tiles-here-is-how-to-use %}">Wang Tiles: Here is How to Use</a>
 - <a href="{% post_url 2020-03-17-using-an-event-manager-to-decouple-your-game-in-unity %}">Using an Event Manager to Decouple your Game in Unity</a>
 
+## Data Structures and Algorithms in JavaScript
+
+It is a collection of common data structures and algorithms implemented in JavaScript. I keep this project for learning purposes and to sharpen my skills.
+
+- Open source: <a href="https://github.com/bernardopacheco/javascript-data-structures-algorithms" target="_blank">get the source code on GitHub</a>
+
 ## bernardopacheco.net (this blog!)
 
 My personal blog. I decided to build my own blog from scratch mainly because I wanted to fully integrate with GitHub, learn Jekyll and apply the best design practices. Another goal was to provide the community with a very easy blog to use and extend.
