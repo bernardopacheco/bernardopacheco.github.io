@@ -1,6 +1,6 @@
-## Bernardo Pacheco website
+## Bernardo Pacheco's website :thought_balloon::pencil2:
 
-* Site: [bernardopacheco.net](http://bernardopacheco.net)
+### Site: [bernardopacheco.net](http://bernardopacheco.net)
 
 If you are interested in making your blog from this project, check out [How I made my blog with GitHub, Jekyll and Material Design](http://bernardopacheco.net/how-i-made-my-blog-with-github-jekyll-and-material-design) post.
 
