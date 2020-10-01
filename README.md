@@ -30,14 +30,14 @@ To customize the blog with your own information, just update two files: [_config
 
 The properties are self-explanatory. With these pieces of information, the site structure is generated, including:
 
-- site's source code (HTML, CSS, JavaScript, images and fonts);
-- social share buttons (Twitter, Facebook and LinkedIn);
-- posts pagination;
+- Site's source code (HTML, CSS, JavaScript, images and fonts);
+- Social share buttons (Twitter, Facebook and LinkedIn);
+- Posts pagination;
 - GitHub links;
 - GitHub repository status (stars and forks);
 - Disqus widget;
 - Disqus latest comments;
-- font size, font family and Material Design color palette.
+- Font size, Font family and Material Design color palette.
 
 Enjoy!
 
